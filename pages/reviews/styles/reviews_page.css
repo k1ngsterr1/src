@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body .screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body .screen .content {
+  display: flex;
+}
+body .screen .pc-content-c {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  body .screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen .content {
+    display: none;
+  }
+  body .screen .pc-content-c {
+    width: 100% !important;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+  }
+  body .screen .pc-content-c .reviews-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen .pc-content-c .reviews-content .review-row {
+    width: 100%;
+    height: auto;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .screen .pc-content-c .review-tab {
+    width: clamp(190.5px, 19.84248vw, 762px);
+    height: clamp(178.5px, 18.59256vw, 714px);
+    border-radius: 6px;
+    background: #bfc2c7;
+    display: flex;
+    justify-content: center;
+  }
+  body .screen .pc-content-c .review-tab .review-content {
+    width: 85.0393700787%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  body .screen .pc-content-c .review-tab .review-content .review-date {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen .pc-content-c .review-tab .review-content .review-date .date {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(8px, 0.83328vw, 32px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .screen .pc-content-c .review-tab .review-content .review-date .screenshot-container {
+    width: clamp(58.5px, 6.09336vw, 234px);
+    height: clamp(12.5px, 1.302vw, 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #E8CB6C 0%, #B29D55 100%);
+    border-radius: 30px;
+  }
+  body .screen .pc-content-c .review-tab .review-content .main-content {
+    width: 100% !important;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen .pc-content-c .review-tab .review-content .main-content .review-name {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(11.5px, 1.19784vw, 46px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .screen .pc-content-c .review-tab .review-content .main-content .review-paragraph {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(8px, 0.83328vw, 32px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .review-tab .review-content .main-content .full {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    margin-top: clamp(4px, 0.41664vw, 16px);
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=reviews_page.css.map */

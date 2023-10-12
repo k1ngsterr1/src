@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body .screen-children {
+  width: 100%;
+  height: auto;
+  background: #ABB4C5;
+}
+body .screen-children .mob-screen {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+body .screen-children .mob-screen .heading-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: clamp(32px, 14.95296vw, 128px);
+}
+body .screen-children .mob-screen .heading-content .heading {
+  text-align: center;
+  color: #202637;
+  font-size: clamp(18px, 8.41104vw, 72px) !important;
+}
+body .screen-children .mob-screen .illustration {
+  width: clamp(150px, 70.092vw, 600px);
+  height: clamp(150px, 70.092vw, 600px);
+  margin: auto;
+  margin-top: clamp(32px, 14.95296vw, 128px);
+}
+body .screen-children .mob-screen .golden-button {
+  width: clamp(120px, 56.0736vw, 480px);
+  height: clamp(27.5px, 12.8502vw, 110px);
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #E8CB6C 0%, #B29D55 100%);
+  margin-top: clamp(16px, 7.47648vw, 64px);
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(8px, 3.73824vw, 32px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.4%;
+}
+body .screen-children .mob-screen .services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(64px, 29.90592vw, 256px);
+}
+body .screen-children .mob-screen .services .service-heading {
+  color: #202637;
+  font-family: Merriweather;
+  font-size: clamp(16.5px, 7.71012vw, 66px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.4%;
+}
+body .screen-children .mob-screen .services .service-squares {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen-children .mob-screen .services .service-squares .service-cont {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: clamp(16px, 7.47648vw, 64px);
+}
+body .screen-children .mob-screen .services .service-squares .service-cont .img {
+  width: 90%;
+}
+body .screen-children .mob-screen .services .service-squares .service-cont .text {
+  font-family: Merriweather;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  margin-top: clamp(4px, 1.86912vw, 16px);
+  color: #202637;
+}
+body .screen-children .mob-screen .services .service-squares .service-square {
+  width: 100%;
+  height: clamp(170px, 79.4376vw, 680px);
+  background-color: gray;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen-children .pc-screen {
+  display: none !important;
+}
+@media screen and (min-width: 1024px) {
+  body .screen-children .mob-screen {
+    display: none;
+  }
+  body .screen-children .pc-screen {
+    width: 71.8229166667% !important;
+    display: flex !important;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: clamp(64px, 6.66624vw, 256px);
+  }
+  body .screen-children .pc-screen .content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: clamp(64px, 6.66624vw, 256px);
+  }
+  body .screen-children .pc-screen .heading-container {
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen-children .pc-screen .heading-container .heading {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(29px, 3.02064vw, 116px) !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .screen-children .pc-screen .heading-container .golden-button {
+    width: clamp(122px, 12.70752vw, 488px);
+    height: clamp(27.5px, 2.8644vw, 110px);
+    background: linear-gradient(90deg, #E8CB6C 0%, #B29D55 100%);
+    border: none;
+    border-radius: 3px;
+    margin-top: clamp(8px, 0.83328vw, 32px);
+    color: #333;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.4%;
+  }
+  body .screen-children .pc-screen .heading-container .square-video {
+    width: clamp(27.5px, 2.8644vw, 110px);
+    height: clamp(27.5px, 2.8644vw, 110px);
+    margin-left: clamp(16px, 1.66656vw, 64px);
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #E8CB6C 0%, #B29D55 100%);
+  }
+  body .screen-children .pc-screen .heading-container .square-video .icon {
+    color: #202637;
+  }
+  body .screen-children .pc-screen .service-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+    border-top: 1px solid #202637;
+  }
+  body .screen-children .pc-screen .service-container .heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen-children .pc-screen .service-container .heading-container .services-heading {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(24px, 2.49984vw, 96px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+  }
+  body .screen-children .pc-screen .service-container .heading-container .button {
+    width: clamp(122.5px, 12.7596vw, 490px);
+    height: clamp(27.5px, 2.8644vw, 110px);
+    border-radius: 6px;
+    color: rgba(32, 38, 55, 0.5);
+    font-family: Raleway;
+    font-size: clamp(9.5px, 0.98952vw, 38px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.4%;
+    border: 1px solid rgba(32, 38, 55, 0.5);
+    background-color: none;
+    background: none;
+  }
+  body .screen-children .pc-screen .service-container .squares-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+  }
+  body .screen-children .pc-screen .service-container .squares-container .row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body .screen-children .pc-screen .service-container .squares-container .row .square-cont {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-start;
+  }
+  body .screen-children .pc-screen .service-container .squares-container .row .square-cont .square {
+    width: clamp(181px, 18.85296vw, 724px);
+    height: clamp(181px, 18.85296vw, 724px);
+  }
+  body .screen-children .pc-screen .service-container .squares-container .row .square-cont .text {
+    margin-top: clamp(4px, 0.41664vw, 16px);
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  }
+  body .screen-children .pc-screen .service-container .squares-container .two {
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen-children .pc-screen .image {
+    width: clamp(265px, 27.6024vw, 1060px);
+    height: clamp(265px, 27.6024vw, 1060px);
+  }
+  body .screen-children .footer .content {
+    display: none;
+  }
+  body .screen-children .footer .pc-content {
+    display: flex !important;
+  }
+}/*# sourceMappingURL=children_styles.css.map */

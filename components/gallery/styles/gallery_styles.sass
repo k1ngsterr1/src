@@ -1,0 +1,114 @@
+@import '../../../styles/variables'
+
+body
+
+    .mySwiper2
+        width: 100%
+        display: flex
+        flex-direction: row
+
+    .gallery
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+
+        .gallery-nav
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+
+            .previous, .next
+                width: clamp(19px,8.878319999999999vw,76px)
+                height: clamp(19px,8.878319999999999vw,76px)
+                border-radius: 70px
+                margin-top: $m16mob
+                border: 1px solid $dark_blue
+                color: $dark_blue
+                transition: 0.3s all
+                &:hover
+                    color: $gold
+
+            .previous
+                margin-right: $m16mob
+
+        .dentist-card, .dentist-card-2
+            display: flex
+            flex-direction: column
+            align-items: start
+            margin-top: $m32mob
+
+            .button-image-container
+                position: relative
+
+                .doctor-btn
+                    position: absolute
+                    width: 103px
+                    height: 94px
+                    display: flex
+                    justify-content: center
+                    border-radius: 5px
+                    background: #202637
+                    border: none
+                    color: $white
+                    font-family: Raleway
+                    font-size: clamp(7px,3.2709599999999996vw,28px)
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    top: clamp(118.5px,55.372679999999995vw,474px)
+                    left: clamp(67px,31.30776vw,268px)
+                    transition: 0.3s all
+                    &:hover
+                        background-color: $gold
+                        color: $dark_blue
+
+                    .text
+                        margin-top: $m16mob
+
+            .doctor-name
+                color: #202637
+                text-align: center
+                font-family: Merriweather
+                font-size: $font18mob
+                font-style: normal
+                font-weight: 400
+                line-height: 137.4%
+                margin-top: $m16mob
+                text-transform: capitalize
+
+            .doctor-position
+                width: 90%
+                color: $dark_blue
+                font-family: Raleway
+                font-size: $font16mob
+                font-style: normal
+                font-weight: 400
+                line-height: 137.4%
+                text-transform: capitalize
+
+        .swiper-custom
+            width: 100%
+            margin-top: $m64mob
+
+        .custom-swiper-slide
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: start
+            // border: 2px solid red
+
+        .blue-link
+            color: #202637
+            font-family: Raleway
+            font-size: $font16mob
+            font-style: normal
+            font-weight: 400
+            margin-top: $m32mob
+            line-height: 137.4%
+            text-decoration-line: underline
+            text-transform: capitalize

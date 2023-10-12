@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body .reviews {
+  width: 100%;
+  height: auto;
+}
+body .reviews .gallery-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: clamp(16px, 1.66656vw, 64px);
+}
+body .reviews .gallery-nav .previous {
+  margin-right: clamp(8px, 0.83328vw, 32px);
+}
+body .reviews .gallery-nav .previous, body .reviews .gallery-nav .next {
+  width: clamp(19px, 1.97904vw, 76px);
+  height: clamp(19px, 1.97904vw, 76px);
+  border: 1px solid #202637;
+  border-radius: 50px;
+  transition: 0.3s all;
+}
+body .reviews .gallery-nav .previous:hover, body .reviews .gallery-nav .next:hover {
+  color: #E8CB6C;
+}
+body .reviews .gallery-nav .previous:hover .previous, body .reviews .gallery-nav .next:hover .previous {
+  margin-right: clamp(8px, 0.83328vw, 32px);
+}
+body .reviews .mySwiper6 {
+  width: 100%;
+  margin-top: clamp(16px, 1.66656vw, 64px);
+}
+body .reviews .mySwiper6 .review-tab {
+  width: clamp(190.5px, 19.84248vw, 762px);
+  height: clamp(178.5px, 18.59256vw, 714px);
+  border-radius: 6px;
+  background: #bfc2c7;
+  display: flex;
+  justify-content: center;
+}
+body .reviews .mySwiper6 .review-tab .review-content {
+  width: 85.0393700787%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body .reviews .mySwiper6 .review-tab .review-content .review-date {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: clamp(16px, 1.66656vw, 64px);
+}
+body .reviews .mySwiper6 .review-tab .review-content .review-date .date {
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(8px, 0.83328vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.4%;
+  text-transform: capitalize;
+}
+body .reviews .mySwiper6 .review-tab .review-content .review-date .screenshot-container {
+  width: clamp(58.5px, 6.09336vw, 234px);
+  height: clamp(12.5px, 1.302vw, 50px);
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #E8CB6C 0%, #B29D55 100%);
+  border-radius: 30px;
+}
+body .reviews .mySwiper6 .review-tab .review-content .main-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: clamp(16px, 1.66656vw, 64px);
+}
+body .reviews .mySwiper6 .review-tab .review-content .main-content .review-name {
+  color: #202637;
+  font-family: Merriweather;
+  font-size: clamp(11.5px, 1.19784vw, 46px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.4%;
+  text-transform: capitalize;
+}
+body .reviews .mySwiper6 .review-tab .review-content .main-content .review-paragraph {
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(8px, 0.83328vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.4%;
+}
+body .reviews .mySwiper6 .review-tab .review-content .main-content .full {
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(9px, 0.93744vw, 36px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.4%;
+  margin-top: clamp(4px, 0.41664vw, 16px);
+  text-decoration: underline;
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body .reviews {
+    width: 100%;
+    height: auto;
+  }
+  body .gallery-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: clamp(16px, 3.125vw, 64px) !important;
+  }
+  body .gallery-nav .previous {
+    margin-right: clamp(8px, 1.5625vw, 32px) !important;
+  }
+  body .gallery-nav .previous, body .gallery-nav .next {
+    width: clamp(19px, 3.7109375vw, 76px) !important;
+    height: clamp(19px, 3.7109375vw, 76px) !important;
+    border: 1px solid #202637;
+    border-radius: 50px;
+    transition: 0.3s all;
+  }
+  body .gallery-nav .previous:hover, body .gallery-nav .next:hover {
+    color: #E8CB6C;
+  }
+  body .gallery-nav .previous:hover .previous, body .gallery-nav .next:hover .previous {
+    margin-right: clamp(8px, 0.83328vw, 32px);
+  }
+  body .gallery-nav .previous .icon, body .gallery-nav .next .icon {
+    font-size: clamp(8px, 1.5625vw, 32px) !important;
+  }
+  body .mySwiper6 {
+    width: 100%;
+    margin-top: clamp(16px, 3.125vw, 64px) !important;
+  }
+  body .mySwiper6 .review-tab {
+    width: clamp(150px, 29.296875vw, 600px) !important;
+    height: clamp(140px, 27.34375vw, 460px) !important;
+    border-radius: 6px;
+    background: #bfc2c7;
+    display: flex;
+    justify-content: center;
+  }
+  body .mySwiper6 .review-tab .review-content {
+    width: 85.0393700787%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  body .mySwiper6 .review-tab .review-content .review-date {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: clamp(16px, 3.125vw, 64px);
+  }
+  body .mySwiper6 .review-tab .review-content .review-date .date {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(8px, 2.0833333333vw, 32px) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .mySwiper6 .review-tab .review-content .review-date .screenshot-container {
+    width: clamp(45px, 11.71875vw, 180px) !important;
+    height: clamp(16px, 2.0833333333vw, 32px) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #E8CB6C 0%, #B29D55 100%);
+    border-radius: 30px;
+  }
+  body .mySwiper6 .review-tab .review-content .review-date .screenshot-container .screenshot {
+    font-size: clamp(6px, 1.5625vw, 24px) !important;
+  }
+  body .mySwiper6 .review-tab .review-content .main-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: clamp(16px, 4.1666666667vw, 64px);
+  }
+  body .mySwiper6 .review-tab .review-content .main-content .review-name {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(8px, 2.0833333333vw, 32px) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .mySwiper6 .review-tab .review-content .main-content .review-paragraph {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(5.5px, 1.4322916667vw, 22px) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+  }
+  body .mySwiper6 .review-tab .review-content .main-content .full {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(7px, 1.8229166667vw, 28px) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    margin-top: clamp(4px, 0.41664vw, 16px);
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=reviews_pc_gallery.css.map */

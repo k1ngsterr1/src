@@ -1,0 +1,224 @@
+@import '../../../styles/variables'
+
+body
+
+    .reviews
+        width: 100%
+        height: auto
+
+        .gallery-nav
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin-top: $m32
+
+            .previous
+                margin-right: $m16
+
+            .previous, .next
+                width: clamp(19px,1.9790400000000001vw,76px)
+                height: clamp(19px,1.9790400000000001vw,76px)
+                border: 1px solid $dark_blue
+                border-radius: 50px
+                transition: 0.3s all
+                &:hover
+                    color: $gold
+
+                    .previous
+                        margin-right: $m16
+
+        .mySwiper6
+            width: 100%
+            margin-top: $m32
+
+            .review-tab
+                width: clamp(190.5px,19.842480000000002vw,762px)
+                height: clamp(178.5px,18.59256vw,714px)
+                border-radius: 6px
+                background: #bfc2c7
+                display: flex
+                justify-content: center
+
+                .review-content
+                    width: 85.03937007874016%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: start
+
+                    .review-date
+                        width: 100%
+                        height: auto
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        margin-top: $m32
+
+                        .date
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: $m16
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                        .screenshot-container
+                            width: clamp(58.5px,6.0933600000000006vw,234px)
+                            height: clamp(12.5px,1.302vw,50px)
+                            display: flex
+                            cursor: pointer
+                            align-items: center
+                            justify-content: center
+                            background: $gold_gradient
+                            border-radius: 30px
+
+                    .main-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        margin-top: $m32
+
+                        .review-name
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: $font23
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                        .review-paragraph
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: $m16
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+
+                        .full
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: $font18
+                            font-style: normal
+                            font-weight: 600
+                            line-height: 137.4%
+                            margin-top: $m8
+                            text-decoration: underline
+
+    @media screen and (min-width: 480px) and (max-width: 1024px)
+
+        .reviews
+            width: 100%
+            height: auto
+
+        .gallery-nav
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin-top: clamp(16px,3.125vw,64px) !important
+
+            .previous
+                margin-right: clamp(8px,1.5625vw,32px) !important
+
+            .previous, .next
+                width: clamp(19px,3.7109375vw,76px) !important
+                height: clamp(19px,3.7109375vw,76px) !important
+                border: 1px solid $dark_blue
+                border-radius: 50px
+                transition: 0.3s all
+                &:hover
+                    color: $gold
+
+                    .previous
+                        margin-right: $m16
+
+                .icon
+                    font-size: clamp(8px,1.5625vw,32px) !important
+
+        .mySwiper6
+            width: 100%
+            margin-top: clamp(16px,3.125vw,64px) !important
+
+            .review-tab
+                width: clamp(150px,29.296875vw,600px) !important
+                height: clamp(140px,27.34375vw,460px) !important
+                border-radius: 6px
+                background: #bfc2c7
+                display: flex
+                justify-content: center
+
+                .review-content
+                    width: 85.03937007874016%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: start
+
+                    .review-date
+                        width: 100%
+                        height: auto
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        margin-top: clamp(16px,3.125vw,64px)
+
+                        .date
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: clamp(8px,2.0833333333333335vw,32px) !important
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                        .screenshot-container
+                            width: clamp(45px, 11.71875vw,180px) !important
+                            height: clamp(16px,2.0833333333333335vw,32px) !important
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            background: $gold_gradient
+                            border-radius: 30px
+
+                            .screenshot
+                                font-size: clamp(6px,1.5625vw,24px) !important
+
+                    .main-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        margin-top: clamp(16px,4.166666666666667vw,64px)
+
+                        .review-name
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(8px,2.0833333333333335vw,32px) !important
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                        .review-paragraph
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: clamp(5.5px,1.4322916666666667vw,22px) !important
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+
+                        .full
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: clamp(7px,1.8229166666666667vw,28px) !important
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            margin-top: $m8
+                            text-decoration: underline

@@ -1,0 +1,242 @@
+@import '../../../styles/variables'
+
+body
+
+    .screen-children
+        width: 100%
+        height: auto
+        background: #ABB4C5
+
+        .mob-screen
+            width: 90%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin: auto
+            align-items: center
+
+            .heading-content
+                width: 100%
+                height: auto
+                display: flex
+                align-items: center
+                margin-top: $m64mob
+
+                .heading
+                    text-align: center
+                    color: $dark_blue
+                    font-size: clamp(18px,8.41104vw,72px) !important
+
+            .illustration
+                width: clamp(150px,70.092vw,600px)
+                height: clamp(150px,70.092vw,600px)
+                margin: auto
+                margin-top: $m64mob
+
+            .golden-button
+                width: clamp(120px,56.0736vw,480px)
+                height: clamp(27.5px,12.8502vw,110px)
+                border: none
+                border-radius: 7px
+                background: $gold_gradient
+                margin-top: $m32mob
+                color: $dark_blue
+                font-family: Raleway
+                font-size: clamp(8px,3.73824vw,32px)
+                font-style: normal
+                font-weight: 500
+                line-height: 137.4%
+
+            .services
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-top: $m128mob
+
+                .service-heading
+                    color: $dark_blue
+                    font-family: Merriweather
+                    font-size: clamp(16.5px,7.71012vw,66px)
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+
+                .service-squares
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin-top: $m32mob
+
+                    .service-cont
+                        width: 90%
+                        margin: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-bottom: $m32mob
+
+                        .img
+                            width: 90%
+
+                        .text
+                            font-family: Merriweather
+                            font-size: $font18mob
+                            margin-top: $m8mob
+                            color: $dark_blue
+
+                    .service-square
+                        width: 100%
+                        height: clamp(170px,79.43759999999999vw,680px)
+                        background-color: gray
+                        margin-top: $m32mob
+
+        .pc-screen
+            display: none !important
+
+        .footer
+
+    @media screen and  (min-width: 1024px)
+
+        .screen-children
+
+            .mob-screen
+                display: none
+
+            .pc-screen
+                width: 71.82291666666667% !important
+                display: flex !important
+                flex-direction: column
+                margin: auto
+                margin-bottom: clamp(64px,6.66624vw,256px)
+
+                .content-container
+                    width: 100%
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    margin-top: $m128
+
+                .heading-container
+                    display: flex
+                    flex-direction: column
+
+                    .heading
+                        color: $dark_blue
+                        font-family: Merriweather
+                        font-size: clamp(29px,3.02064vw,116px) !important
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+                        text-transform: capitalize
+
+                    .golden-button
+                        width: clamp(122px,12.70752vw,488px)
+                        height: clamp(27.5px,2.8644000000000003vw,110px)
+                        background: $gold_gradient
+                        border: none
+                        border-radius: 3px
+                        margin-top: $m16
+                        color: #333
+                        font-family: Raleway
+                        font-size: clamp(9px,0.93744vw,36px)
+                        font-style: normal
+                        font-weight: 500
+                        line-height: 137.4%
+
+                    .square-video
+                        width: clamp(27.5px,2.8644000000000003vw,110px)
+                        height: clamp(27.5px,2.8644000000000003vw,110px)
+                        margin-left: $m32
+                        border: none
+                        border-radius: 3px
+                        background: $gold_gradient
+
+                        .icon
+                            color: $dark_blue
+
+                .service-container
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    margin-top: $m64
+                    border-top: 1px solid $dark_blue
+
+                    .heading-container
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: space-between
+                        margin-top: $m32
+
+                        .services-heading
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(24px,2.49984vw,96px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                        .button
+                            width: clamp(122.5px,12.7596vw,490px)
+                            height: clamp(27.5px,2.8644000000000003vw,110px)
+                            border-radius: 6px
+                            color: rgba(32, 38, 55, 0.50)
+                            font-family: Raleway
+                            font-size: clamp(9.5px,0.9895200000000001vw,38px)
+                            font-style: normal
+                            font-weight: 500
+                            line-height: 137.4%
+                            border: 1px solid rgba(32, 38, 55, 0.50)
+                            background-color: none
+                            background: none
+
+                    .squares-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        margin-top: $m64
+
+                        .row
+                            width: 100%
+                            height: auto
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            justify-content: space-between
+
+                            .square-cont
+                                width: auto
+                                height: auto
+                                display: flex
+                                flex-direction: column
+                                cursor: pointer
+                                align-items: flex-start
+
+                                .square
+                                    width: clamp(181px,18.85296vw,724px)
+                                    height: clamp(181px,18.85296vw,724px)
+
+                                .text
+                                    margin-top: $m8
+                                    color: $dark_blue
+                                    font-family: Merriweather
+                                    font-size: clamp(11.5px,1.1979166666666667vw,46px)
+
+                        .two
+                            margin-top: $m32
+
+                .image
+                    width: clamp(265px,27.6024vw,1060px)
+                    height: clamp(265px,27.6024vw,1060px)
+
+            .footer
+
+                .content
+                    display: none
+
+                .pc-content
+                    display: flex !important

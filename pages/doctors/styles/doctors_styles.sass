@@ -1,0 +1,62 @@
+@import '../../../styles/variables'
+
+body
+
+    .doctors-container
+        width: 100%
+        display: flex
+        flex-direction: column
+        margin-top: $m64
+
+        .doctors-row
+            width: 100%
+            height: auto
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+            .doctor
+                width: auto
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .img
+                    width: clamp(194px,20.20704vw,776px)
+                    height: clamp(261.5px,27.237840000000002vw,1046px)
+
+                .name
+                    color: $dark_blue
+                    text-align: center
+                    font-family: Merriweather
+                    font-size: clamp(11.5px,1.19784vw,46px)
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: $m16
+
+                .who
+                    color: rgba(32, 38, 55, 0.70)
+                    text-align: center
+                    font-family: Raleway
+                    font-size: clamp(9px,0.93744vw,36px)
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: $m8
+
+        .two
+            margin-top: $m32
+
+    @media screen and (min-width: 480px) and (max-width: 1024px)
+
+        .screen
+
+            .content
+                display: none
+
+            .pc-content-c
+                display: flex

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body .mySwiper2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+body .gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body .gallery .gallery-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+body .gallery .gallery-nav .previous, body .gallery .gallery-nav .next {
+  width: clamp(19px, 8.87832vw, 76px);
+  height: clamp(19px, 8.87832vw, 76px);
+  border-radius: 70px;
+  margin-top: clamp(8px, 3.73824vw, 32px);
+  border: 1px solid #202637;
+  color: #202637;
+  transition: 0.3s all;
+}
+body .gallery .gallery-nav .previous:hover, body .gallery .gallery-nav .next:hover {
+  color: #E8CB6C;
+}
+body .gallery .gallery-nav .previous {
+  margin-right: clamp(8px, 3.73824vw, 32px);
+}
+body .gallery .dentist-card, body .gallery .dentist-card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .gallery .dentist-card .button-image-container, body .gallery .dentist-card-2 .button-image-container {
+  position: relative;
+}
+body .gallery .dentist-card .button-image-container .doctor-btn, body .gallery .dentist-card-2 .button-image-container .doctor-btn {
+  position: absolute;
+  width: 103px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background: #202637;
+  border: none;
+  color: #F4F4F4;
+  font-family: Raleway;
+  font-size: clamp(7px, 3.27096vw, 28px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 137.4%;
+  text-transform: capitalize;
+  top: clamp(118.5px, 55.37268vw, 474px);
+  left: clamp(67px, 31.30776vw, 268px);
+  transition: 0.3s all;
+}
+body .gallery .dentist-card .button-image-container .doctor-btn:hover, body .gallery .dentist-card-2 .button-image-container .doctor-btn:hover {
+  background-color: #E8CB6C;
+  color: #202637;
+}
+body .gallery .dentist-card .button-image-container .doctor-btn .text, body .gallery .dentist-card-2 .button-image-container .doctor-btn .text {
+  margin-top: clamp(8px, 3.73824vw, 32px);
+}
+body .gallery .dentist-card .doctor-name, body .gallery .dentist-card-2 .doctor-name {
+  color: #202637;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.4%;
+  margin-top: clamp(8px, 3.73824vw, 32px);
+  text-transform: capitalize;
+}
+body .gallery .dentist-card .doctor-position, body .gallery .dentist-card-2 .doctor-position {
+  width: 90%;
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(8px, 3.73824vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.4%;
+  text-transform: capitalize;
+}
+body .gallery .swiper-custom {
+  width: 100%;
+  margin-top: clamp(32px, 14.95296vw, 128px);
+}
+body .gallery .custom-swiper-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+body .gallery .blue-link {
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(8px, 3.73824vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+  line-height: 137.4%;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}/*# sourceMappingURL=gallery_styles.css.map */

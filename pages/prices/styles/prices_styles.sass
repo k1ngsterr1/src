@@ -1,0 +1,642 @@
+@import '../../../styles/variables'
+
+body
+
+    .screen
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+
+        .content
+
+            .main-content
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+                margin-top: $m32mob
+
+                .bread-dots
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+
+                    .main-link, .prices-link
+                        color: $dark_blue
+                        font-family: Raleway
+                        font-size: clamp(9px,4.20552vw,36px)
+                        font-style: normal
+                        font-weight: 500
+                        line-height: 137.4%
+                        transition: 0.3s all
+                        &:hover
+                            color: $gold
+
+                    .circle
+                        width: clamp(2.5px,1.1682vw,10px)
+                        height: clamp(2.5px,1.1682vw,10px)
+                        background-color: $dark_blue
+                        border-radius: 50px
+                        margin-left: $m8mob
+                        margin-right: $m8mob
+
+                    .prices-link
+                        color: rgba(32, 38, 55, 0.50)
+
+                .heading
+                    color: $dark_blue
+                    font-family: Merriweather
+                    font-size: clamp(14px,6.541919999999999vw,56px) !important
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: clamp(11.5px,5.37372vw,46px)
+
+                .divider-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background: rgba(32, 38, 55, 0.50)
+                        margin-top: $m32mob
+                        margin-bottom: $m16mob
+
+                    .row
+                        width: 100%
+                        display: flex !important
+                        flex-direction: row !important
+                        align-items: center !important
+                        justify-content: space-between !important
+
+                        .text
+                            width: auto
+                            color: rgba(32, 38, 55, 0.50)
+                            font-family: Raleway
+                            font-size: clamp(8.5px,3.9718799999999996vw,34px)
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+
+            .services-content
+                width: 100%
+                display: flex
+                flex-direction: column
+                margin-top: $m32mob
+
+                .heading-container
+                    width: 100% !important
+                    display: flex
+                    flex-direction: row
+                    align-items: flex-start
+                    text-align: left
+                    margin-top: $m32mob
+
+                    .heading
+                        color: #202637
+                        font-family: Merriweather
+                        font-size: clamp(11.5px,5.37372vw,46px)
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+
+                #xray, #anasthetics, #restavration
+                    width: 100%
+                    height: auto
+
+                .buttons
+                    width: 100%
+                    height: auto
+                    margin: auto
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+
+                    .row
+                        width: 100%
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: space-between
+
+                        .button
+                            width: clamp(90px,42.0552vw,360px)
+                            height: clamp(30px,14.0184vw,120px)
+                            border: none
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            font-family: Raleway
+                            font-size: clamp(7.5px,3.5046vw,30px)
+                            font-style: normal
+                            font-weight: 500
+                            line-height: 137.4%
+                            margin-top: $m16mob
+                            text-align: center
+                            border-radius: 4px
+                            color: $white
+                            background-color: $dark_blue
+                            transition: 0.3s all
+                            &:hover
+                                background-color: $gold
+                                color: $dark_blue
+
+                        .button-active
+                            width: clamp(90px,42.0552vw,360px)
+                            height: clamp(30px,14.0184vw,120px)
+                            border: none
+                            font-family: Raleway
+                            font-size: clamp(7.5px,3.5046vw,30px)
+                            font-style: normal
+                            font-weight: 500
+                            line-height: 137.4%
+                            border-radius: 4px
+                            color: $dark_blue
+                            background-color: $gold
+                            transition: 0.3s all
+                            &:hover
+                                background-color: $dark_blue
+                                color: $white
+
+                    .two
+                        margin-top: $m16mob
+
+                .cards
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .price-tab, .price-tab-long
+                        width: 100%
+                        height: auto
+                        border-radius: 8px
+                        background: #747988
+                        display: flex
+                        flex-direction: column
+                        color: $white
+                        margin-top: $m32mob
+
+                        .price-heading
+                            width: 100%
+                            font-size: clamp(9.5px,4.439159999999999vw,38px)
+                            margin-top: clamp(11px,5.140079999999999vw,44px)
+                            margin-left: clamp(11px,5.140079999999999vw,44px)
+
+                        .price-p, .price-p-two, .price-p-three
+                            width: 80%
+                            color: #FFF
+                            font-family: Raleway
+                            font-size: $m16mob
+                            font-style: normal
+                            font-weight: 600
+                            line-height: 147.4%
+                            margin-left: clamp(11px,5.140079999999999vw,44px)
+                            margin-top: $m32mob
+
+                        .price, .price-two, .price-three
+                            color: #F9FFFD
+                            font-family: Raleway
+                            font-size: clamp(10.5px,4.90644vw,42px)
+                            font-style: normal
+                            font-weight: 600
+                            line-height: 137.4%
+                            margin-top: $m16mob
+                            margin-left: clamp(11px,5.140079999999999vw,44px)
+
+                        .blue-btn
+                            width: 238px
+                            height: 48px
+                            background-color: $dark_blue
+                            color: $gold
+                            border-radius: 5px
+                            margin-top: $m32mob
+                            border: none
+                            margin-bottom: $m32mob
+                            margin-left: clamp(11px,5.140079999999999vw,44px)
+                            transition: 0.3s all
+                            &:hover
+                                background-color: $gold
+                                color: $dark_blue
+
+    @media screen and  (min-width: 1024px)
+
+        .screen
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+
+            .content
+                display: none
+
+            .pc-content-c
+                width: 100% !important
+                height: auto
+                flex-direction: column
+                display: flex
+
+                .main-content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    margin: auto
+
+                    .upper-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        margin-top: $m64
+
+                        .bread-dots-container
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+
+                            .link-prices
+                                color: rgba(51, 51, 51, 0.50) !important
+
+                            .link, .link-prices
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: clamp(9px,0.93744vw,36px)
+                                font-style: normal
+                                font-weight: 500
+                                line-height: 137.4%
+
+                            .bread-dot
+                                width: clamp(2.5px,0.2604vw,10px)
+                                height: clamp(2.5px,0.2604vw,10px)
+                                margin-left: $m8
+                                margin-right: $m8
+                                background-color: $dark_blue
+                                border-radius: 50px
+
+                        .heading-container
+                            width: 100%
+                            height: auto
+                            display: flex
+                            flex-direction: row
+                            align-items: flex-start
+                            margin-top: clamp(11.5px,1.19784vw,46px)
+
+                            .heading
+                                color: $dark_blue
+                                font-family: Merriweather
+                                font-size: clamp(29px,3.02064vw,116px) !important
+                                font-style: normal
+                                font-weight: 700
+                                line-height: 137.4%
+                                text-transform: capitalize
+
+                        .divider-container
+                            width: 100%
+                            display: flex
+                            flex-direction: column
+                            margin-top: clamp(32px,3.33312vw,128px)
+
+                            .divider
+                                width: 100%
+                                height: 1px
+                                background: rgba(32, 38, 55, 0.50)
+
+                            .row-container
+                                width: 100%
+                                height: auto
+                                display: flex
+                                flex-direction: row
+                                justify-content: space-between
+
+                                .text
+                                    color: #7D8291
+                                    font-family: Raleway
+                                    font-size: clamp(9px,0.93744vw,36px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    margin-top: $m16
+
+                    .services-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        justify-content: space-between
+                        align-items: flex-start
+                        margin-top: $m64
+
+                        .services-list
+                            height: auto !important
+                            position: sticky !important
+                            top: $m128 !important
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+
+                            .button, .button-active
+                                cursor: pointer
+                                padding: 0 !important
+                                margin: 0 !important
+                                background: none !important
+                                border: none !important
+                                margin-top: $m16 !important
+
+                            .button-active
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: clamp(10.5px,1.09368vw,42px)
+                                font-style: normal
+                                font-weight: 800
+                                line-height: 137.4%
+                                text-decoration-line: underline
+
+                            .button
+                                color: #7D8291
+                                font-family: Raleway
+                                font-size: clamp(10px,1.0416vw,40px)
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                transition: 0.3s all
+                                &:hover
+                                    font-size: clamp(10.5px,1.09368vw,42px)
+                                    font-weight: 800
+
+                        .cards-list
+                            display: flex
+                            flex-direction: column
+
+                            .heading
+                                color: $dark_blue
+                                font-family: Merriweather
+                                font-size: clamp(13px,1.35408vw,52px)
+                                font-style: normal
+                                font-weight: 700
+                                line-height: 137.4%
+
+                            .price-tab, .price-tab-long
+                                width: clamp(443.5px,46.19496vw,1774px)
+                                height: auto
+                                display: flex
+                                flex-direction: column
+                                border-radius: 8px
+                                margin-top: $m32
+                                background: #747988
+
+                                .price-heading
+                                    color: $white
+                                    font-family: Merriweather
+                                    font-size: clamp(12px,1.24992vw,48px)
+                                    font-style: normal
+                                    font-weight: 700
+                                    line-height: 137.4%
+                                    margin-top: $m32
+                                    margin-left: $m32
+
+                                .price-p, .price-p-two, .price-p-three
+                                    width: 65%
+                                    color: #FFF
+                                    font-family: Raleway
+                                    font-size: clamp(9px,0.93744vw,36px)
+                                    font-style: normal
+                                    font-weight: 600
+                                    line-height: 137.4%
+                                    margin-top: $m32
+                                    margin-left: $m32
+
+                                .price-p-two
+                                    width: 65%
+                                    color: #FFF
+                                    font-family: Raleway
+                                    font-size: clamp(9px,0.93744vw,36px)
+                                    font-style: normal
+                                    font-weight: 600
+                                    line-height: 137.4%
+                                    margin-top: $m32
+                                    margin-left: $m32
+
+                                .price, .price-two, .price-three
+                                    color: $white
+                                    font-family: Raleway
+                                    font-size: clamp(10.5px,1.09368vw,42px)
+                                    font-style: normal
+                                    font-weight: 600
+                                    line-height: 137.4%
+                                    margin-left: $m32
+                                    margin-top: $m16
+
+                                .blue-btn
+                                    width: clamp(119px,12.39504vw,476px)
+                                    height: clamp(24px,2.49984vw,96px)
+                                    background-color: $dark_blue
+                                    border: none
+                                    border-radius: 6px
+                                    cursor: pointer
+                                    font-size: clamp(10px,1.0416vw,40px)
+                                    color: $gold
+                                    margin-left: $m32
+                                    margin-top: $m32
+                                    margin-bottom: $m32
+                                    transition: 0.3s all
+                                    &:hover
+                                        background-color: $gold
+                                        color: $dark_blue
+
+    @media screen and (min-width: 480px) and (max-width: 1024px)
+
+        .screen
+
+            .content
+                display: none
+
+            .pc-content-c
+                width: 100%
+                display: flex !important
+                height: auto
+                margin: auto
+                margin-bottom: clamp(45px,11.71875vw,180px)
+
+                .main-content
+                    width: 93.5546875%
+                    height: auto
+                    margin: auto !important
+
+                    .upper-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        margin-top: clamp(16px,4.166666666666667vw,64px)
+
+                        .bread-dots-container
+                            width: 100%
+                            display: flex
+                            align-items: center
+
+                            .bread-dot
+                                width: clamp(4px,0.78125vw,16px)
+                                height: clamp(4px,0.78125vw,16px)
+                                border-radius: 50px
+                                background-color: $dark_blue
+                                margin-left: clamp(4px,1.0416666666666667vw,16px)
+                                margin-right: clamp(4px,1.0416666666666667vw,16px)
+
+                            .link, .link-prices
+                                color: $dark_blue !important
+                                font-family: Raleway
+                                font-size: clamp(9px,2.34375vw,36px) !important
+                                font-style: normal
+                                font-weight: 500
+                                line-height: 137.4%
+
+                            .link-prices
+                                color: rgba(32, 38, 55, 0.50) !important
+
+                        .heading-container
+                            width: 100%
+                            height: auto
+                            display: flex
+
+                            .heading
+                                color: $dark_blue
+                                font-family: Merriweather
+                                font-size: clamp(22px,5.729166666666667vw,88px) !important
+                                font-style: normal
+                                font-weight: 700
+                                line-height: 137.4%
+                                text-transform: capitalize
+                                margin-top: clamp(8px, 2.0833333333333335vw,32px)
+
+                        .divider-container
+                            width: 100%
+                            height: auto
+                            display: flex
+                            flex-direction: column
+
+                            .divider
+                                width: 100%
+                                height: 1px
+                                background: rgba(32, 38, 55, 0.50)
+
+                            .row-container
+                                width: 100%
+                                height: auto
+                                display: flex
+                                align-items: center
+                                justify-content: space-between
+                                margin-top: clamp(8px,2.0833333333333335vw,32px)
+
+                                .text
+                                    color: rgba(32, 38, 55, 0.50)
+                                    font-family: Raleway
+                                    font-size: clamp(9px,2.34375vw,36px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+
+                    .services-content
+                        width: 100%
+                        display: flex
+                        justify-content: space-between
+                        margin-top: clamp(32px,8.333333333333334vw,128px)
+
+                        .services-list
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start !important
+
+                            .button, .button-active
+                                display: flex !important
+                                align-items: flex-start !important
+                                padding: 0 !important
+                                margin: 0 !important
+                                border: none
+                                background: none
+                                margin-top: 16px !important
+
+                            .button
+                                color: rgba(32, 38, 55, 0.50)
+                                font-family: Raleway
+                                font-size: clamp(9px,2.34375vw,36px) !important
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+
+                            .button-active
+                                color: #202637
+                                font-family: Raleway
+                                font-size: clamp(9px,2.34375vw,36px) !important
+                                font-style: normal
+                                font-weight: 800
+                                line-height: 137.4%
+                                text-decoration-line: underline
+
+                    .cards-list
+                        display: flex
+                        flex-direction: column
+
+                        .heading
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(13px,3.3854166666666665vw,52px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                        .price-tab, .price-tab-long
+                            width: clamp(214.5px,55.859375vw,858px)
+                            height: auto
+                            border-radius: 8px
+                            background: #747988
+                            flex-shrink: 0
+                            display: flex
+                            flex-direction: column
+                            margin-top: clamp(16px,4.166666666666667vw,64px)
+
+                            .price-heading
+                                color: $white
+                                font-family: Merriweather
+                                font-size: clamp(10px,2.6041666666666665vw,40px)
+                                font-style: normal
+                                font-weight: 700
+                                line-height: 137.4%
+                                margin-top: clamp(16px,4.166666666666667vw,64px)
+                                margin-left: clamp(16px,4.166666666666667vw,64px)
+
+                            .price-p, .price-p-two, .price-p-three, .price-p-four
+                                width: 80%
+                                color: $white
+                                font-family: Raleway
+                                font-size: clamp(8px,2.0833333333333335vw,32px)
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                margin-top: clamp(16px,4.166666666666667vw,64px)
+                                margin-left: clamp(16px,4.166666666666667vw,64px)
+
+                            .price, .price-two, .price-three
+                                color: $white
+                                font-family: Raleway
+                                font-size: clamp(8px,2.0833333333333335vw,32px)
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                margin-top: clamp(8px,2.0833333333333335vw,32px) !important
+                                margin-left: clamp(16px,4.166666666666667vw,64px)
+
+                            .blue-btn
+                                width: clamp(119px,30.989583333333332vw,476px)
+                                height: clamp(24px,6.25vw,96px)
+                                color: $white
+                                background-color: $dark_blue
+                                border: none
+                                border-radius: 5px
+                                margin-top: clamp(8px,2.0833333333333335vw,32px) !important
+                                margin-left: clamp(16px,4.166666666666667vw,64px)
+                                margin-bottom: clamp(8px,2.0833333333333335vw,32px) !important

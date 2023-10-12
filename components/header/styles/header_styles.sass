@@ -1,0 +1,173 @@
+@import '../../../styles/variables'
+
+body
+
+    .header
+        width: 100%
+        height: auto
+
+        .header-pc
+            display: none
+
+        .header-mob
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            margin-top: $m32mob
+
+            .logo
+                width: clamp(36px,16.82208vw,144px)
+                height: clamp(41.5px,19.39212vw,166px)
+
+            .hamburger-button
+                top: clamp(22px,10.280159999999999vw,88px)
+                left: clamp(177.5px,82.9422vw,710px)
+
+        .header-tablet
+            display: none
+
+    .tablet
+        display: none
+
+@media screen and  (min-width: 1024px)
+
+    // .hamburger-react
+    //     width: clamp(24px,2.49984vw,96px)
+    //     position: absolute !important
+    //     z-index: 2000
+    //     top: clamp(55px,5.728800000000001vw,220px) !important
+    //     left: clamp(816px,84.99456vw,3264px)!important
+
+    .header
+        width: 100%
+        height: auto
+
+        .header-mob
+            display: none !important
+
+        .header-pc
+            width: 100%
+            display: flex !important
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            margin-top: $m64
+
+            .header-content
+                width: auto
+                height: auto
+                display: flex
+                flex-direction: row
+                align-items: center
+
+                .hamburger-button
+                    top: clamp(50px,5.208vw,200px)
+                    left: clamp(795px,82.80720000000001vw,3180px)
+
+            .logo
+                width: clamp(53px,5.52048vw,212px)
+                height: clamp(61px,6.35376vw,244px)
+
+            .tel-link
+                color: $dark_blue
+                font-family: Raleway
+                font-size: clamp(13px,1.35408vw,52px)
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                margin-right: $m32
+
+            .header-btn
+                width: clamp(119px,12.39504vw,476px)
+                height: clamp(24px,2.49984vw,96px)
+                border-radius: 5px
+                background: #202637
+                color: $white
+                font-family: Raleway
+                font-size: $font18
+                font-style: normal
+                font-weight: 500
+                line-height: 137.4%
+                border: none
+                margin-right: $m32
+                transition: 0.3s all
+                &:hover
+                    background: $gold
+                    color: $dark_blue
+
+        .header-tablet
+            display: none
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+
+    // .hamburger-react
+    //     width: clamp(24px,2.49984vw,96px)
+    //     position: absolute !important
+    //     z-index: 2000
+    //     top: clamp(25px,6.510416666666667vw,100px) !important
+    //     right: 0 !important
+    //     left: clamp(475px,92.7734375vw,1900px) !important
+
+    .header
+        width: 100%
+        height: auto
+
+        .header-mob
+            display: none !important
+
+        .header-pc
+            display: none !important
+
+        .header-tablet
+            width: 100%
+            height: auto
+            display: flex !important
+            align-items: center
+            margin-top: clamp(16px,4.166666666666667vw,64px)
+
+            .tablet-content
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+
+                .logo
+                    width: clamp(45px,11.71875vw,180px)
+                    height: clamp(57.5px,13.671875vw,210px)
+
+                .header-content
+                    width: auto
+                    height: auto
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+
+                    .tel-link
+                        color: $dark_blue
+                        font-family: Raleway
+                        font-size: clamp(10px,2.6041666666666665vw,40px)
+                        font-style: normal
+                        display: none
+                        font-weight: 400
+                        line-height: normal
+                        margin-right: clamp(8px,2.0833333333333335vw,32px)
+
+                    .header-btn
+                        width: clamp(119px,30.989583333333332vw,476px)
+                        height: clamp(24px,6.25vw,96px)
+                        border-radius: 6px
+                        color: $white
+                        font-family: Raleway
+                        font-size: clamp( 9px,2.34375vw,36px)
+                        font-style: normal
+                        font-weight: 500
+                        line-height: 137.4%
+                        background-color: $dark_blue
+                        margin-right: clamp(8px,2.0833333333333335vw,32px)
+
+                .hamburger-button
+                    top: clamp(35px,7.518796992481203vw,140px)
+                    right: clamp(16px,3.4371643394199785vw,64px)

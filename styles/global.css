@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #F4F4F4;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: clamp(35px, 16.3548vw, 140px) !important;
+  font-family: "Merriweather", serif !important;
+  font-weight: 700 !important;
+  color: #E8CB6C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.content {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  background: none !important;
+  border: none;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #202637;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .loader-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.loader .loader-container .logo {
+  width: clamp(84px, 8.74944vw, 336px);
+  height: clamp(94px, 9.79104vw, 376px);
+}
+.loader .loader-container .logo .loading-heading {
+  width: 70%;
+  color: #F4F4F4;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: clamp(15px, 7.0092vw, 60px) !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.4%;
+  text-transform: capitalize;
+  margin-top: clamp(16px, 1.66656vw, 64px) !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202637;
+    opacity: 1;
+    transition: all 3s ease-in-out;
+  }
+  .loader .loader-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .loader .loader-container .logo {
+    width: clamp(124.5px, 12.96792vw, 498px);
+    height: clamp(143px, 14.89488vw, 572px);
+  }
+  .loader .loader-container .logo .loading-heading {
+    width: 80%;
+    color: #F4F4F4 !important;
+    text-align: center !important;
+    font-family: Merriweather !important;
+    font-size: clamp(25px, 2.604vw, 100px) !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+    text-transform: capitalize;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+}/*# sourceMappingURL=global.css.map */

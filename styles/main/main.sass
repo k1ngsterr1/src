@@ -1,0 +1,2762 @@
+@import '../variables'
+
+body
+
+    .screen
+        width: 100%
+        height: auto
+
+        .content
+
+            .heading-container
+                display: flex
+                flex-direction: column
+                margin: auto
+                margin-top: $m64mob
+
+                .home
+                    margin-top: $m8mob
+                    margin-left: $font70mob
+
+            .main_image
+                width: clamp(129.5px,60.51275999999999vw,518px)
+                height: clamp(207px,96.72695999999999vw,828px)
+                margin-top: $m128mob
+                margin-bottom: $m128mob
+
+        .pc-content
+            display: none
+
+        .pictures-div
+            display: none
+
+        .features-screen
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            background-color: $dark_blue
+
+            .doctor-container
+                width: 100%
+                height: auto
+                background-color: $dark_blue
+
+                .content
+
+                    .image-container
+                        width: 100%
+                        height: auto
+                        position: relative
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-top: clamp(50px,23.363999999999997vw,200px)
+                        margin-bottom: $m64mob
+
+                        .image
+                            width: clamp(142.5px,66.5874vw,570px)
+                            height: clamp(230px,107.47439999999999vw,920px)
+
+                        .bulb
+                            width: clamp(64.8235px,30.290725079999998vw,259.294px)
+                            height: clamp(74px,34.57872vw,296px)
+                            position: absolute
+                            left: clamp(5px,2.3364vw,20px)
+                            top: clamp(-20px,-9.3456vw,-80px)
+
+                        .main_doctor
+                            text-align: center
+                            font-family: 'Merriweather'
+                            font-size: $font32mob
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            text-transform: capitalize
+                            color: $gold
+                            margin-top: $m32mob
+
+                        .name
+                            color: rgba(255, 255, 255, 0.35)
+                            text-align: center
+                            font-family: Merriweather
+                            font-size: clamp(8.5px,3.9718799999999996vw,34px)
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            text-transform: capitalize
+                            margin-top: $m8mob
+
+            .features-container
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .features-photo
+                    width: 100%
+                    height: auto
+
+                .features
+                    width: 90%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: flex-end
+                    margin: auto
+                    margin-top: $m64mob
+
+                    .divider
+                        width: 100%
+                        margin-top: $m16mob
+                        margin-bottom: $m8mob
+
+                    .feature-tab
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-start
+                        text-align: right
+                        color: $low_opacity
+
+                        .number
+                            font-family: Raleway
+                            font-size: $font16mob
+                            font-style: normal
+                            font-weight: 500
+                            line-height: 137.4%
+                            margin-top: $m8mob
+                            margin-bottom: $m8mob
+
+                        .paragraph
+                            font-family: Raleway
+                            font-size: $font18mob
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+
+                        .gold-text
+                            font-family: Merriweather
+                            font-size: $font16mob
+                            color: $gold
+                            margin-top: $m16mob
+                            font-style: normal
+                            font-weight: 300 !important
+                            line-height: 177.4%
+
+                    .text_divider
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        color: $low_opacity
+
+                        .row_text
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            justify-content: space-between
+
+                    .feature-tab-long
+                        width: 100%
+                        height: clamp(56.5px,26.40132vw,226px)
+                        border: 1px solid $low_opacity
+                        border-radius: 5px
+                        display: flex
+                        flex-direction: column
+                        align-items: start
+                        justify-content: flex-start
+                        margin-top: $m32mob
+
+                        .number
+                            font-family: Raleway
+                            font-size: $font16mob
+                            font-style: normal
+                            font-weight: 500
+                            color: $low_opacity
+                            line-height: 137.4%
+                            margin-top: $m16mob
+                            margin-left: $m16mob
+
+                        .paragraph-goldz
+                            font-family: Raleway
+                            font-size: $gold !important
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+
+                .golden-button
+                    width: clamp(148.5px,69.39108vw,594px)
+                    height: clamp(27.5px,12.8502vw,110px)
+                    color: #202637
+                    font-family: Raleway
+                    font-size: clamp(10px,4.6728vw,40px)
+                    font-style: normal
+                    font-weight: 600
+                    line-height: 137.4%
+                    background: $gold_gradient
+                    color: $dark_blue
+                    border: none
+                    margin-top: $m32mob
+                    border-radius: 5px
+                    transition: 0.3s all
+                    margin-bottom: $m128mob
+                    &:hover
+                        transition: 0.3s all
+                        color: white
+
+        .pc-features-screen
+            display: none
+
+        .service-screen
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            background-color: $dark_blue
+
+            .content
+
+                .service-heading-container
+                    width: 100%
+                    height: auto
+
+                    .services-heading
+                        width: 45%
+                        color: white
+                        text-align: left
+                        margin-top: $m8mob
+
+                        .golden
+                            color: $gold
+
+                .text_divider
+                    width: 100%
+                    height: auto
+                    margin-top: $m32mob
+
+                    .row_text
+                        display: flex
+                        justify-content: space-between
+                        color: $low_thirty_opacity
+                        margin-top: $m8mob
+
+                .services-buttons
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    margin-top: $m32mob
+
+                    .btn
+                        width: 100%
+                        height: 40px
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        margin: 0 !important
+                        padding: 0 !important
+                        box-shadow: none !important
+                        margin-top: $m16mob !important
+
+                        .btn-content
+                            width: 100%
+                            height: auto
+                            display: flex
+                            flex-direction: row
+                            justify-content: space-between
+                            align-items: center
+                            margin: 0 !important
+                            padding: 0 !important
+
+                            .text-inactive
+                                color: $low_thirty_opacity
+                                font-family: Merriweather
+                                font-style: normal
+                                font-weight: 700
+                                text-transform: none
+                                line-height: 137.4%
+                                font-size: $font22mob
+                                margin: 0 !important
+                                padding: 0 !important
+
+                            .text-active
+                                color: $gold
+                                font-family: Merriweather
+                                font-style: normal
+                                font-weight: 700
+                                line-height: 137.4%
+                                text-decoration: underline
+                                text-transform: none
+                                font-size: $font22mob
+
+                            .golden-icon
+                                color: $gold
+                                font-size: $font22mob
+
+                    .expanded-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+
+                        .text_divider
+                            margin-top: $m16mob
+
+                            .row_text
+                                margin-top: $m16mob
+
+                                .golden-link
+                                    color: $gold
+                                    text-decoration: underline
+                                    transition: 0.3s all
+                                    cursor: pointer
+                                    &:hover
+                                        color: $white
+
+                        .golden-button
+                            width: clamp(112px,52.335359999999994vw,448px)
+                            height: clamp(25px,11.681999999999999vw,100px)
+                            background: $gold_gradient
+                            border: none
+                            border-radius: 3px
+                            color: $dark_blue
+                            font-size: $font18mob
+                            margin-top: $m64mob
+                            margin-bottom: $m32mob
+                            transition: 0.3s all
+                            &:hover
+                                color: $white
+
+                        .links-container
+                            width: 100%
+                            height: auto
+                            margin-top: $m32mob
+                            margin-bottom: $m32mob
+                            display: flex
+                            flex-direction: column
+
+                            .golden-link
+                                width: auto
+                                font-size: $font17mob
+                                color: $gold
+                                text-decoration: underline
+                                margin-top: $font16mob
+                                transition: 0.3s all
+                                font-family: Raleway
+                                font-size: $font17mob
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                text-decoration-line: underline
+                                &:hover
+                                    color: $white
+
+                .link-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: flex-start
+                    margin-top: clamp(24px,11.21472vw,96px)
+
+                    .golden-link
+                        font-family: Raleway
+                        font-size: clamp(9px,4.20552vw,36px)
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 137.4%
+                        cursor: pointer
+                        color: $gold
+                        text-decoration-line: underline
+                        transition: 0.3s all
+                        margin-bottom: $m64mob
+                        &:hover
+                            color: $white
+
+        .pc-service-screen
+            display: none
+
+        .doctors-gallery-screen
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            background-color: $white
+
+            .content
+                margin-top: $m64mob
+
+                .heading-container-gallery
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+
+                .divider
+                    margin-top: $m8mob
+                    margin-bottom: $m8mob
+                    background-color: $dark_blue
+
+        .doctors-gallery-screen-pc
+            display: none
+
+        .free-form-pc
+            display: none
+
+        .dental-home-gallery
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            background-color: $white
+            margin-top: $m128mob
+
+            .content
+
+                .gallery-heading-container
+                    width: 100%
+                    display: flex
+                    flex-direction: row
+                    align-items: start
+
+                    .gallery-heading
+                        width: 60%
+                        color: #202637
+                        font-family: Merriweather
+                        font-size: clamp(14px,6.541919999999999vw,56px)
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+                        text-transform: capitalize
+
+                .divider
+                    width: 100%
+                    height: 1px
+                    background-color: $dark_blue
+                    margin-top: $m16mob
+
+                .galleries
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin-top: $m64mob
+
+                    .gallery-one, .gallery-two
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+
+                        .gallery-heading, .gallery-heading-two
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: $font16mob
+                            margin-bottom: $m32mob
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                        .gallery-heading-two
+                            margin-top: $m32mob
+
+        .dental-home-gallery-pc
+            display: none
+
+        .review-screen
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            background-color: $white
+            margin-top: $m128mob
+
+            .content
+
+                .review-heading-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+
+                    .reviews-heading
+                        color: $dark_blue
+                        font-family: Merriweather
+                        font-size: clamp(14px,6.541919999999999vw,56px)
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+                        text-transform: capitalize
+
+                .divider
+                    width: 100%
+                    height: 1px
+                    background-color: $dark_blue
+                    margin-bottom: $m16mob
+
+                .link-blue-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-top: $m32mob
+
+                    .blue-link
+                        color: $dark_blue
+                        font-family: Raleway
+                        font-size: $font18mob
+                        font-style: normal
+                        font-weight: 600
+                        text-decoration: underline
+                        line-height: 137.4%
+
+        .review-pc-screen
+            display: none
+
+        .form-screen
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin-top: $m128mob
+
+            .content
+
+                .form-heading-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: flex-start
+
+                    .form-heading
+                        width: 60%
+                        color: #202637
+                        font-family: Merriweather
+                        font-size: clamp(14px,6.541919999999999vw,56px)
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+                        text-transform: capitalize
+
+                .divider
+                    width: 100%
+                    height: 1px
+                    background-color: $dark_blue
+                    margin-top: $m16mob
+
+                .form
+                    width: 77.95275590551181%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .input-container
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        margin-top: $m32mob
+
+                        .la
+                            color: rgba(32, 38, 55, 0.70)
+                            font-family: Raleway
+                            font-size: $font16mob
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+                            margin-bottom: $m8mob
+
+                        .input-text
+                            width: clamp(144.5px,67.52195999999999vw,578px)
+                            height: clamp(25px,11.681999999999999vw,100px)
+                            border-radius: 4px
+                            background-color: $white
+                            border: 2px solid rgba(32, 38, 55, 0.60)
+                            color: #6A6F7F
+                            padding-left: $m16mob
+                            font-family: Raleway
+                            font-size: $font16mob
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 137.4%
+
+                        .comment
+                            width: clamp(144.5px,67.52195999999999vw,578px)
+                            height: clamp(66.5px,31.074119999999997vw,266px)
+                            border-radius: 4px
+                            background-color: $white
+                            border: 2px solid #6A6F7F
+
+                    .checkbox-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: center
+
+                        .checkbox-container-2
+                            width: 100%
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            margin-top: $m16mob
+
+                            .checkbox-text
+                                color: rgba(32, 38, 55, 0.70)
+                                font-family: Raleway
+                                font-size: 16px
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+
+                            .checkbox-c
+                                width: $m32mob
+                                height: $m32mob
+                                border-radius: 4px
+                                border: 2px solid #6A6F7F
+
+                    .form-button
+                        width: 100%
+                        height: clamp(27.5px,12.8502vw,110px)
+                        background: $gold_gradient
+                        color: $dark_blue
+                        color: #333
+                        font-family: Raleway
+                        font-size: clamp(10px,4.6728vw,40px)
+                        font-style: normal
+                        font-weight: 600
+                        margin-top: $m32mob
+                        line-height: 137.4%
+                        border-radius: 5px
+                        border: none
+
+        .form-pc-screen
+            display: none
+
+    .mySwiper4, .mySwiper5
+        width: clamp(283.5px,29.52936vw,1134px) !important
+        height: clamp(283.5px,29.52936vw,1134px) !important
+
+        .swiper-image
+            width: clamp(283.5px,29.52936vw,1134px) !important
+            height: clamp(283.5px,29.52936vw,1134px) !important
+
+    .modal
+        width: 85%
+        height: 70vh
+        overflow-y: hidden !important
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: auto !important
+        position: fixed
+        right: 0 !important
+        bottom: 10% !important
+        margin-bottom: 0px !important
+        border-radius: 28px
+        background-color: $dark_blue
+        box-shadow: 0px 15px 31px 0px rgba(0, 0, 0, 0.25)
+
+        .modal-img
+            width: 100% !important
+            height: clamp(200px,93.45599999999999vw,800px) !important
+
+        .gold-cross
+            font-size: $m32mob
+            color: $dark_blue
+            position: absolute
+            right: $m16mob
+            top: $m16mob
+
+        .modal-content
+            width: 90%
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: $m32mob
+            margin-bottom: 0px
+            background-color: $dark_blue
+
+            .logo
+                width: 64px
+                height: 64px
+                display: none
+                margin-top: $m16mob
+                margin-bottom: $m16mob
+
+            .text
+                font-family: Merriweather
+                font-size: $m16mob
+                color: $gold
+                font-style: normal
+                font-weight: 700
+                line-height: 137.4%
+                text-transform: capitalize
+                text-align: center
+
+            .additional-text
+                color: $white
+                margin-top: $m16mob
+                margin-bottom: $m16mob
+                display: none
+                text-align: center
+                font-family: Raleway
+                font-size: clamp(7.5px,3.5046vw,30px)
+                font-style: normal
+                font-weight: 300
+                line-height: 137.4%
+
+            .input-container
+                width: 100%
+                display: flex
+                margin-bottom: $m32mob
+                flex-direction: column
+                align-items: center
+
+            .label
+                color: $white
+                text-align: center
+                font-family: Raleway
+                font-size: $font16mob
+                font-style: normal
+                font-weight: 400
+                line-height: 137.4%
+
+            .phone-number-input
+                width: 90%
+                height: clamp(30px,14.0184vw,120px)
+                border-radius: 5px
+                color: $dark_blue
+                font-family: Raleway
+                font-size: clamp(7.5px,3.5046vw,30px)
+                font-style: normal
+                font-weight: 400
+                line-height: 137.4%
+                margin-top: $m16mob
+                &::placeholder
+                    text-align: center
+
+            .phone-btn
+                width: 90%
+                height: clamp(30px,14.0184vw,120px)
+                display: flex
+                background-color: $gold
+                border-radius: 7px
+                align-items: center
+                justify-content: center
+                color: $dark_blue
+                font-family: Raleway
+                font-size: clamp(8.5px,3.9718799999999996vw,34px)
+                border: none
+                font-style: normal
+                font-weight: 500
+                line-height: 137.4%
+                margin-top: $m16mob
+
+                .icon
+                    margin-right: $m8mob
+                    color: $dark_blue
+
+    .loader
+        width: 100vw
+        height: 100vh
+        background-color: $dark_blue
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .loader-container
+            width: auto
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: start
+
+            .logo
+                width: clamp(84px,8.74944vw,336px)
+                height: clamp(94px,9.79104vw,376px)
+
+            .loading-heading
+                width: 70%
+                color: $white
+                text-align: center
+                font-family: Merriweather
+                font-size: clamp(15px,7.0092vw,60px) !important
+                font-style: normal
+                font-weight: 700
+                line-height: 137.4%
+                text-transform: capitalize
+                margin-top: $m32 !important
+
+    .services-modal-button
+        display: none !important
+        position: fixed !important
+        right: $m32
+        bottom: $m32
+        z-index: 10000
+        cursor: pointer
+        transition: transform .7s ease-in-out
+        &:hover
+            transform: rotate(360deg)
+
+    .video-modal
+        width: 85%
+        height: 70vh
+        overflow-y: hidden !important
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin: auto !important
+        position: fixed
+        right: 0 !important
+        left: 0 !important
+        bottom: 10% !important
+        margin-bottom: 0px !important
+        border-radius: 28px
+        background-color: $dark_blue
+        box-shadow: 0px 15px 31px 0px rgba(0, 0, 0, 0.25)
+
+        .video
+            width: 90%
+            height: clamp(175px,81.774vw,700px)
+
+        .phone-btn
+            width: 90%
+            height: clamp(30px,14.0184vw,120px)
+            display: flex
+            background-color: $gold
+            border-radius: 7px
+            align-items: center
+            justify-content: center
+            color: $dark_blue
+            font-family: Raleway
+            font-size: clamp(8.5px,3.9718799999999996vw,34px)
+            border: none
+            font-style: normal
+            font-weight: 500
+            line-height: 137.4%
+            margin-top: $m16mob
+            .icon
+                margin-right: $m8mob
+                color: $dark_blue
+
+    @media screen and  (min-width: 1024px)
+
+        .screen
+            width: 100%
+            height: auto
+
+            .content
+                display: none
+
+            // .css-zvi4ix
+                // width: 100% !important
+
+            .pc-content
+                width: 100% !important
+                height: auto
+                display: flex !important
+                flex-direction: column
+                background-color: $white
+                margin-bottom: 0px !important
+
+                .white-content
+                    width: 100% !important
+                    height: auto
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin: auto
+                    flex-direction: column
+
+                    .header-container
+                        width: 71.82291666666667%
+                        height: auto
+
+                    .heading-container
+                        width: auto
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        margin-top: $m128
+
+                        .home
+                            margin-left: $m128
+
+                    .blue-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-top: clamp(100px,10.416vw,400px)
+
+                        .photos
+                            position: relative
+                            margin-bottom: clamp(200px,20.832vw,800px)
+
+                            .main_image
+                                width: clamp(304.5px,31.716720000000002vw,1218px)
+                                height: clamp(469px,48.851040000000005vw,1876px)
+                                margin-top: $m64
+                                transition: transform 0.5s ease
+
+                            .main_image.large
+                                transform: scale(1.2)
+
+                            .photo-container
+                                display: flex
+                                flex-direction: column
+                                align-items: center
+
+                                .doctor-names
+                                    width: 100%
+                                    display: flex !important
+                                    flex-direction: column
+                                    align-items: center
+                                    position: absolute
+                                    z-index: 100 !important
+                                    top: clamp(616px,64.16256vw,2464px) !important
+                                    left: clamp(150px,15.624vw,600px) !important
+
+                                    .name
+                                        text-align: center
+                                        font-family: Merriweather
+                                        font-size: $m32
+                                        color: $gold
+                                        font-style: normal
+                                        font-weight: 400
+                                        line-height: 137.4%
+                                        text-transform: capitalize
+
+                                    .under-text
+                                        color: rgba(255, 255, 255, 0.35)
+                                        text-align: center
+                                        font-family: Merriweather
+                                        font-size: clamp(11.5px,1.19784vw,46px)
+                                        font-style: normal
+                                        font-weight: 400
+                                        line-height: 137.4%
+                                        margin-top: $m8
+                                        text-transform: capitalize
+
+                                .pavel
+                                    width: clamp(175px,18.228vw,700px)
+                                    height: clamp(261.5px,27.237840000000002vw,1046px)
+                                    position: absolute
+                                    z-index: 100 !important
+                                    top: clamp(346px,36.03936vw,1384px)
+                                    left: clamp(212.5px,22.134vw,850px)
+
+                                .bulb
+                                    width: clamp(64.5px,6.71832vw,258px)
+                                    height: clamp(74.5px,7.75992vw,298px)
+                                    position: absolute
+                                    top: clamp(350px,36.456vw,1400px)
+                                    left: clamp(200.5px,20.88408vw,802px)
+                                    z-index: 2000 !important
+
+            .gallery-content
+                width: auto
+                height: auto
+                background-color: $dark_blue
+
+                .pictures-div
+                    width: 105%
+                    height: auto
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: space-between
+                    background-color: $dark_blue
+                    overflow-x: hidden
+
+                    .gallery-05
+                        width: clamp(190px,19.7904vw,760px)
+                        height: clamp(190px,19.7904vw,760px)
+
+                    .gallery-04
+                        width: clamp(118px,12.29088vw,472px)
+                        height: clamp(118px,12.29088vw,472px)
+
+                    .gallery-03
+                        width: clamp(189.5px,19.73832vw,758px)
+                        height: clamp(189.5px,19.73832vw,758px)
+
+                    .gallery-02
+                        width: clamp(172px,17.91552vw,688px)
+                        height: clamp(172px,17.91552vw,688px)
+
+                    .gallery-01
+                        width: clamp(198px,20.62368vw,792px)
+                        height: clamp(198px,20.62368vw,792px)
+
+            .features-screen
+                display: none
+
+            .pc-features-screen
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                background-color: $dark_blue
+
+                .features-content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    position: relative
+                    flex-direction: row
+                    justify-content: space-between
+                    margin-top: clamp(128px,13.33248vw,512px)
+
+                    .features-image
+                        width: clamp(301px,31.35216vw,1204px)
+                        height: clamp(376.5px,39.21624vw,1506px)
+                        transition: transform 0.3s ease
+
+                    .features-list
+                        width: auto
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-end
+                        justify-content: flex-start
+
+                        .features-heading
+                            font-family: Merriweather
+                            font-size: $font48
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            color: $gold
+                            text-transform: capitalize
+
+                        .list-content
+                            width: auto
+                            height: auto
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-end
+                            justify-content: flex-end
+                            margin-top: $m32
+
+                            .list-01, .list-02
+                                width: auto
+                                height: auto
+                                display: flex
+                                flex-direction: column
+                                align-items: flex-end
+
+                                .divider-container
+                                    display: flex
+                                    flex-direction: row
+                                    align-items: center
+
+                                    .divider
+                                        width: clamp(228.5px,23.80056vw,914px)
+                                        height: 1px
+                                        background-color: $low_opacity
+                                        margin-right: $m16
+
+                                    .number
+                                        color: rgba(255, 255, 255, 0.60)
+                                        font-family: Raleway
+                                        font-size: $font21
+                                        font-style: normal
+                                        font-weight: 500
+                                        line-height: 137.4%
+
+                                .list-p
+                                    width: 60%
+                                    color: rgba(255, 255, 255, 0.60)
+                                    text-align: right
+                                    font-family: Raleway
+                                    font-size: $font20
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    margin-right: clamp(17px,1.77072vw,68px)
+                                    margin-top: $m16
+
+                                .l
+                                    width: 40%
+
+                                .list-p-gold
+                                    width: 40%
+                                    color: $gold
+                                    text-align: right
+                                    font-family: Merriweather
+                                    font-size: $font20
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    margin-right: clamp(17px,1.77072vw,68px)
+                                    margin-top: $m32
+
+                                .list-02
+                                    margin-top: $m64
+
+                                .square-row
+                                    display: flex
+                                    flex-direction: row
+                                    align-items: center
+                                    margin-right: $m32
+
+                                    .square
+                                        width: clamp(110px,11.457600000000001vw,440px)
+                                        height: clamp(74.5px,7.75992vw,298px)
+                                        display: flex
+                                        flex-direction: column
+                                        justify-content: space-between
+                                        border: 1px solid $low_opacity
+                                        border-radius: 5px
+
+                                        .number
+                                            color: rgba(255, 255, 255, 0.60)
+                                            font-family: Raleway
+                                            font-size: clamp(8.5px,0.88536vw,34px)
+                                            font-style: normal
+                                            font-weight: 500
+                                            line-height: 137.4%
+                                            margin-top: $m16
+                                            margin-left: $m16
+
+                                        .gold-p
+                                            color: #E8CB6C
+                                            font-family: Raleway
+                                            font-size: $m16
+                                            font-style: normal
+                                            font-weight: 400
+                                            line-height: 137.4%
+                                            margin-bottom: $m32
+                                            margin-left: $m16
+
+                                    .left
+                                        margin-left: $m16
+
+                                .second
+                                    margin-top: $m16
+
+                                .first
+                                    margin-top: $m32
+
+                            .golden-btn
+                                width: clamp(148.5px,15.46776vw,594px)
+                                height: clamp(27.5px,2.8644000000000003vw,110px)
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: $font20
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                background: $gold_gradient
+                                border-radius: 5px
+                                margin-right: $m32
+                                margin-top: $m32
+                                margin-bottom: $m128
+                                transition: 0.3s all
+                                &:hover
+                                    color: $white
+
+            .pc-service-screen
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                background-color: $dark_blue
+
+                .content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    margin-top: $m128
+                    margin-bottom: $m128
+
+                    .heading-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: row
+                        align-items: start
+
+                        .heading
+                            width: 25%
+                            color: $white
+                            font-family: Merriweather
+                            font-size: $font48
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                        .gold
+                            color: $gold
+
+                    .rows
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: space-between
+                        margin-top: $m32
+
+                        .row-one-c
+                            width: clamp(333px,34.68528vw,1332px)
+                            height: auto
+                            display: flex
+                            align-items: flex-start
+                            flex-direction: column
+                            border-top: 1px solid $low_opacity
+
+                            .text
+                                color: $low_opacity
+                                font-family: Raleway
+                                font-size: $font18
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                margin-top: $m16
+
+                    .services-list-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+
+                        .services-list
+                            display: flex
+                            flex-direction: column
+                            margin-top: $m32
+
+                            .btn
+                                box-shadow: none
+                                margin: 0
+                                padding: 0
+                                margin-top: clamp(12px,1.24992vw,48px)
+
+                            .btn-content
+                                display: flex
+                                flex-direction: column
+                                align-items: start
+                                margin: 0
+                                padding: 0
+                                transition: 0.3s all
+                                &:hover
+                                    color: $white
+
+                                .text-active
+                                    color: $gold
+                                    font-family: Merriweather
+                                    font-size: clamp(13px,1.35408vw,52px)
+                                    font-style: normal
+                                    text-transform: none
+                                    font-weight: 700
+                                    line-height: 137.4%
+                                    text-decoration-line: underline
+                                    transition: 0.3s all
+
+                                .text-inactive
+                                    color: rgba(255, 255, 255, 0.30)
+                                    font-family: Merriweather
+                                    font-size: clamp(11px,1.1457600000000001vw,44px)
+                                    font-style: normal
+                                    text-transform: none
+                                    font-weight: 700
+                                    line-height: 137.4%
+                                    transition: 0.3s all
+                                    &:hover
+                                        color: $white
+
+                        .expanded-tab
+                            width: clamp(333px,34.68528vw,1332px)
+                            height: auto
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+                            margin-top: $m32
+
+                            .golden-btn
+                                width: clamp(122px,12.70752vw,488px)
+                                height: clamp(25px,2.604vw,100px)
+                                background: $gold_gradient
+                                color: #202637
+                                border-radius: 3px
+                                border: none
+                                font-family: Raleway
+                                font-size: $font18
+                                font-style: normal
+                                font-weight: 500
+                                line-height: 137.4%
+                                transition: 0.3s all
+                                &:hover
+                                    color: $white
+
+                            .row
+                                width: clamp(333px,34.68528vw,1332px)
+                                height: 1px
+                                margin-top: $m32
+                                margin-left: 1px
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.30)
+
+                            .row-text
+                                color: rgba(255, 255, 255, 0.30)
+                                font-family: Raleway
+                                font-size: $font18
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                margin-top: $m16
+
+                            .gold-text
+                                color: $gold
+                                font-family: Raleway
+                                font-size: $font18
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                text-decoration-line: underline
+                                margin-top: $m16
+                                transition: 0.3s all
+                                &:hover
+                                    color: $white
+
+            .doctors-gallery-screen-pc
+                width: 100%
+                height: auto
+                background-color: $white
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .heading-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+
+                        .heading
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: $font48
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background: $dark_blue
+
+            .free-form-pc
+                width: 100%
+                height: auto
+                display: flex
+                margin-top: $m128
+
+                .content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+
+                    .form-container
+                        width: auto
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+
+                        .free-form-content
+                            width: 100%
+                            height: auto
+                            display: flex
+                            flex-direction: row
+                            align-items: flex-start
+                            justify-content: space-between
+                            margin-top: $m64
+
+                            .form-image
+                                width: clamp(272.5px,28.3836vw,1090px)
+                                height: clamp(272.5px,28.3836vw,1090px)
+
+                        .heading
+                            width: 100%
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(24px,2.49984vw,96px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                        .input-content
+                            width: auto
+                            height: auto
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+
+                            .icons-text-container
+                                width: auto
+                                height: auto
+                                display: flex
+                                flex-direction: row
+                                justify-content: space-between
+                                margin-top: $m32
+
+                                .icons
+                                    width: auto
+                                    height: auto
+                                    display: flex
+                                    flex-direction: column
+                                    justify-content: space-between
+
+                                    .tooth-icon, .chair-icon
+                                        width: clamp(18px,1.87488vw,72px)
+                                        height: clamp(21px,2.18736vw,84px)
+
+                                    .tooth-icon
+                                        margin-top: $m8
+
+                                    .tooth-icon-container, .chair-icon-container
+                                        display: flex
+                                        align-items: center
+
+                                    .chair-icon-container
+                                        margin-top: $m16
+
+                                .paragraph
+                                    width: 80%
+                                    color: $dark_blue
+                                    font-family: Raleway
+                                    font-size: $font23
+                                    font-style: normal
+                                    font-weight: 500
+                                    line-height: 137.4%
+                                    margin-top: $m16
+                                    margin-left: $m32
+                                    .tooth
+                                        margin-left: clamp(22.5px,2.3436vw,90px)
+
+                            .two
+                                margin-top: $m32
+
+                            .text-span
+                                width: 50%
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: $font20
+                                font-style: normal
+                                font-weight: 300
+                                line-height: 137.4%
+                                margin-top: clamp(24px,2.49984vw,96px)
+
+                            .input-container
+                                width: auto
+                                height: auto
+                                display: flex
+                                align-items: center
+                                margin-top: $m32
+
+                                .telephone-input
+                                    width: clamp(93.5px,9.73896vw,374px)
+                                    height: clamp(30px,3.1248vw,120px)
+                                    color: rgba(51, 51, 51, 0.66)
+                                    font-family: Raleway
+                                    border: none
+                                    font-size: $m16
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    border-radius: 4px
+                                    background-color: #F9FFFD
+                                    padding-left: $m16
+
+                                .form-btn
+                                    width: clamp(93.5px,9.73896vw,374px)
+                                    height: clamp(30px,3.1248vw,120px)
+                                    background: $gold_gradient
+                                    border-radius: 4px
+                                    border: none
+                                    color: $dark_blue
+                                    font-family: Raleway
+                                    font-size: clamp(8.5px,0.88536vw,34px)
+                                    font-style: normal
+                                    font-weight: 500
+                                    line-height: 137.4%
+                                    transition: 0.3s all
+                                    &:hover
+                                        color: $white
+
+            .dental-home-gallery-pc
+                width: 100%
+                height: auto
+                display: flex
+                margin-top: $m64
+
+                .content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-start
+
+                .heading-container
+                    width: 100%
+                    display: flex
+                    align-items: start
+
+                    .heading
+                        width: 30%
+                        color: $dark_blue
+                        font-family: Merriweather
+                        font-size: clamp(24px,2.49984vw,96px)
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+                        text-transform: capitalize
+
+                .galleries-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: space-between
+                    margin-top: $m32
+
+                    .gallery-one, .gallery-two
+                        width: clamp(283.5px,29.52936vw,1134px)
+                        height: clamp(283.5px,29.52936vw,1134px)
+
+                        .g-heading
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(12px,1.24992vw,48px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                        .mySwiper4, .mySwiper5
+                            width: clamp(283.5px,29.52936vw,1134px)
+                            height: clamp(283.5px,29.52936vw,1134px)
+                            margin-top: $m32
+
+                .btn-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    .gold-btn
+                        width: clamp(148.5px,15.46776vw,594px)
+                        height: clamp(27.5px,2.8644000000000003vw,110px)
+                        color: #202637
+                        font-family: Raleway
+                        font-size: clamp(10px,1.0416vw,40px)
+                        font-style: normal
+                        font-weight: 600
+                        border: none
+                        border-radius: 5px
+                        line-height: 137.4%
+                        background: $gold_gradient
+                        margin-top: $m128
+                        transition: 0.3s all
+                        &:hover
+                            color: $white
+
+            .dental-home-gallery
+                display: none
+
+            .review-pc-screen
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .heading-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+
+                        .heading
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: $font48
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background-color: $dark_blue
+
+                    .all-reviews-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+                        margin-top: $m32
+
+                        .blue-link
+                            margin-top: clamp(9px,0.93744vw,36px)
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: $font18
+                            font-style: normal
+                            font-weight: 600
+                            cursor: pointer
+                            line-height: 137.4%
+                            text-decoration: underline
+                            transition: 0.3s all
+                            &:hover
+                                color: $gold
+
+            .form-pc-screen
+                width: 100%
+                height: auto
+                display: flex !important
+                flex-direction: column
+                align-items: center
+
+                .content
+                    width: 71.82291666666667%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .heading-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+
+                        .heading
+                            width: 40%
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: $font48
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background-color: $dark_blue
+                        margin-top: $m16
+
+                    .form-content
+                        width: auto
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-top: $m64
+
+                        .row-c
+                            width: clamp(305px,31.768800000000002vw,1220px)
+                            height: auto
+                            display: flex
+                            // flex-direction: row
+                            justify-content: space-between
+
+                            .input-container
+                                display: flex
+                                flex-direction: column
+
+                                .text
+                                    color: rgba(32, 38, 55, 0.70)
+                                    font-family: Raleway
+                                    font-size: $m16
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+
+                                .input-c
+                                    width: clamp(144.5px,15.051120000000001vw,578px)
+                                    height: clamp(25px,2.604vw,100px)
+                                    border-radius: 4px
+                                    color: rgba(32, 38, 55, 0.60)
+                                    font-family: Raleway
+                                    background-color: $white
+                                    font-size: $m16
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    border: 2px solid rgba(32, 38, 55, 0.60)
+                                    padding-left: $m32
+                                    margin-top: $m8
+
+                                .input-s
+                                    width: clamp(305px,31.768800000000002vw,1220px)
+                                    height: clamp(25px,2.604vw,100px)
+                                    border-radius: 4px
+                                    background-color: $white
+                                    color: rgba(32, 38, 55, 0.60)
+                                    font-family: Raleway
+                                    font-size: $m16
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    border: 2px solid rgba(32, 38, 55, 0.60)
+                                    padding-left: $m32
+                                    margin-top: $m8
+
+                            .services
+                                margin-top: $m32
+
+                            .comment
+                                width: clamp(305px,31.768800000000002vw,1220px)
+                                border-radius: 4px
+                                background-color: $white
+                                color: rgba(32, 38, 55, 0.60)
+                                font-family: Raleway
+                                font-size: $m16
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                border: 2px solid rgba(32, 38, 55, 0.60)
+                                padding-left: $m32
+                                padding-top: $m32
+                                margin-top: $m8
+
+                        .checkbox-container
+                            width: 85%
+                            height: auto
+                            display: flex
+                            align-items: start
+                            margin-top: $m32
+
+                            .check-row
+                                width: auto
+                                height: auto
+                                display: flex
+                                align-items: center
+
+                                .checkbox
+                                    width: clamp(16px,1.66656vw,64px)
+                                    height: clamp(16px,1.66656vw,64px)
+                                    border-radius: 4px
+                                    border: 2px solid #202637
+
+                                .text
+                                    width: 60%
+                                    color: $dark_blue
+                                    font-family: Raleway
+                                    font-size: clamp(7.5px,0.7812vw,30px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    margin-left: $m16
+
+                            .golden-btn
+                                width: clamp(125px,13.02vw,500px)
+                                height: clamp(23px,2.39568vw,92px)
+                                background: $gold_gradient
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: $m16
+                                border: none
+                                border-radius: 5px
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                transition: 0.3s all
+                                &:hover
+                                    color: $white
+
+            .form-screen
+                display: none !important
+
+        .modal
+            width: clamp(537.5px,55.986000000000004vw,2150px)
+            height: clamp(230px,23.9568vw,920px)
+            display: flex
+            flex-direction: row
+            overflow-x: hidden
+            margin: auto !important
+            position: fixed
+            top: 0px
+            left: 0px
+            border-radius: 28px !important
+            background-color: $dark_blue
+            box-shadow: 0px 15px 31px 0px rgba(0, 0, 0, 0.25)
+
+            .modal-img
+                width: clamp(236px,24.58176vw,944px) !important
+                height: 100% !important
+
+            .gold-cross
+                display: none
+
+            .modal-content
+                width: 90%
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-top: 0px !important
+                border-radius: 28px !important
+                background-color: $dark_blue
+
+                .logo
+                    display: flex !important
+                    margin-top: $m32
+                    margin-bottom: $m32
+
+                .text
+                    font-family: Merriweather
+                    font-size: clamp(11px,1.1457600000000001vw,44px)
+                    color: $gold
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    text-align: center
+
+                .additional-text
+                    color: $white
+                    margin-top: $m32
+                    display: flex
+                    margin-bottom: $m16
+                    text-align: center
+                    font-family: Raleway
+                    font-size: clamp(7.5px,0.7812vw,30px)
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 137.4%
+
+                .input-container
+                    width: 100%
+                    display: flex
+                    margin-bottom: $m32
+                    flex-direction: column
+                    align-items: center
+
+                .label
+                    color: $white
+                    text-align: center
+                    font-family: Raleway
+                    font-size: clamp(8px,0.83328vw,32px)
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 137.4%
+
+                .phone-number-input
+                    width: 60%
+                    height: clamp(30px,3.1248vw,120px)
+                    border-radius: 5px
+                    color: $dark_blue
+                    font-family: Raleway
+                    font-size: clamp(7.5px,0.7812vw,30px)
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 137.4%
+                    margin-top: $m16
+                    &::placeholder
+                        text-align: center
+
+                .phone-btn
+                    width: 60%
+                    height: clamp(30px,3.1248vw,120px)
+                    display: flex
+                    background-color: $gold
+                    border-radius: 7px
+                    align-items: center
+                    justify-content: center
+                    color: $dark_blue
+                    font-family: Raleway
+                    font-size: clamp(8.5px,0.88536vw,34px)
+                    border: none
+                    font-style: normal
+                    font-weight: 500
+                    line-height: 137.4%
+                    margin-top: $m16
+
+                    .icon
+                        margin-right: $m8
+                        color: $dark_blue
+
+        .loader
+            width: 100vw
+            height: 100vh
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: $dark_blue
+            opacity: 1
+            transition: all 3s ease-in-out
+
+            .loader-container
+                width: auto
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .logo
+                    width: clamp(124.5px,12.96792vw,498px)
+                    height: clamp(143px,14.89488vw,572px)
+
+                .loading-heading
+                    width: 80%
+                    color: $white !important
+                    text-align: center !important
+                    font-family: Merriweather !important
+                    font-size: clamp(25px,2.604vw,100px) !important
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: $m32
+
+        .services-modal-button
+            display: flex !important
+            position: fixed !important
+            right: $m32
+            bottom: $m32
+            z-index: 10000
+            cursor: pointer
+            transition: transform .7s ease-in-out
+            &:hover
+                transform: rotate(360deg)
+
+        .all-screen-content
+            width: 100%
+            height: 100%
+            position: relative !important
+
+        .video-modal
+            width: 40%
+            height: 80vh
+            overflow-y: hidden !important
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin: auto !important
+            position: fixed
+            right: 0 !important
+            left: 0 !important
+            bottom: 10% !important
+            margin-bottom: 0px !important
+            border-radius: 28px
+            background-color: $dark_blue
+            box-shadow: 0px 15px 31px 0px rgba(0, 0, 0, 0.25)
+
+            .video
+                width: 60%
+                height: clamp(200px,20.832vw,800px)
+
+            .phone-btn
+                width: 35%
+                height: clamp(30px,3.1248vw,120px)
+                display: flex
+                background-color: $gold
+                border-radius: 7px
+                align-items: center
+                justify-content: center
+                color: $dark_blue
+                font-family: Raleway
+                font-size: clamp(8.5px,0.88536vw,34px)
+                border: none
+                font-style: normal
+                font-weight: 500
+                line-height: 137.4%
+                margin-top: $m16mob
+                .icon
+                    margin-right: $m8mob
+                    color: $dark_blue
+
+    @media screen and (min-width: 480px) and (max-width: 1024px)
+
+        .screen
+            width: 100%
+            height: auto
+
+            .content
+                display: none
+
+            .pc-content
+                width: 100%
+                display: flex !important
+                height: auto
+                margin: auto
+
+                .white-content
+                    width: 100%
+
+                    .header-container
+                        width: 93.5546875%
+                        height: auto
+                        margin: auto !important
+
+                    .heading-container
+                        width: 100%
+                        display: flex
+                        flex-direction: column !important
+                        justify-content: center !important
+                        margin-top: clamp(64px,12.5vw,256px)
+
+                        .dental
+                            margin: auto
+                            font-family: Merriweather
+                            font-size: clamp(55px,10.7421875vw,220px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+                            margin-left: clamp(100px,19.53125vw,400px)
+
+                        .home
+                            margin: auto !important
+                            font-family: Merriweather
+                            font-size: clamp(55px,10.7421875vw,220px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+                            margin-left: clamp(200px,39.0625vw,800px) !important
+
+                    .blue-content
+
+                        .photos
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+
+                            .main_image
+                                width: clamp(230px,44.921875vw,920px) !important
+                                height: clamp(345px,67.3828125vw,1380px) !important
+                                margin-top: clamp(32px,6.25vw,128px)
+
+                            .photo-container
+                                position: relative !important
+
+                                .bulb
+                                    position: absolute !important
+                                    top: clamp(60px,11.71875vw,240px)
+                                    left: clamp(-20px,-3.90625vw, -80px)
+
+                                .pavel
+                                    width: clamp(174.5px,34.08203125vw,698px)
+                                    height: clamp(261.5px,51.07421875vw,1046px)
+                                    margin-top: clamp(64px,12.5vw,256px)
+                                    position: static !important
+
+                                .doctor-names
+                                    display: flex !important
+                                    flex-direction: column
+                                    align-items: center
+                                    margin-top: clamp(16px,3.125vw,64px)
+
+                                .name
+                                    color: $gold
+                                    text-align: center
+                                    font-family: Merriweather
+                                    font-size: clamp(16px,3.125vw,64px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    text-transform: capitalize
+
+                                .under-text
+                                    color: rgba(255, 255, 255, 0.35)
+                                    text-align: center
+                                    font-family: Merriweather
+                                    font-size: clamp(9px,1.7578125vw,36px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    margin-top: clamp(8px,1.5625vw,32px)
+                                    text-transform: capitalize
+
+            .features-screen
+                display: none !important
+
+            .pc-features-screen
+                display: flex !important
+                justify-content: center
+                background-color: $dark_blue
+
+                .features-content
+                    width: 93.5546875%
+                    display: flex
+                    flex-direction: row
+                    margin-top: clamp(64px,12.5vw,256px)
+
+                    .features-image
+                        width: clamp(200px,39.0625vw,800px)
+                        height: clamp(221.5px,43.26171875vw,886px)
+
+                    .features-list
+                        display: flex !important
+                        flex-direction: column !important
+                        justify-content: flex-end !important
+                        align-items: flex-end
+
+                        .features-heading
+                            font-size: clamp(22px,4.296875vw,88px)
+                            text-align: right
+                            color: $gold
+
+                        .list-content
+                            display: flex !important
+                            flex-direction: column !important
+                            justify-content: flex-end !important
+                            align-items: flex-end !important
+                            margin-top: clamp(32px,6.25vw,128px) !important
+                            text-align: right
+                            color: rgba(255, 255, 255, 0.60)
+
+                            .list-01, .list-02
+                                display: flex !important
+                                flex-direction: column !important
+                                align-items: flex-end !important
+
+                                .divider-container
+                                    width: 100%
+                                    display: flex !important
+                                    flex-direction: row !important
+                                    align-items: center !important
+                                    justify-content: flex-end !important
+
+                                    .divider
+                                        width: 70% !important
+
+                                    .number
+                                        margin-left: clamp(8px,1.5625vw,32px) !important
+
+                                .list-p
+                                    width: 80%
+                                    margin-left: 0px !important
+                                    font-size: clamp(12px,2.34375vw,48px)!important
+                                    margin-top: clamp(16px,3.125vw,64px)
+
+                                .list-p-gold
+                                    width: 70%
+                                    height: auto
+                                    font-size: clamp(12px,2.34375vw,48px)
+                                    color: $gold
+
+                                .gold-p
+                                    color: $gold
+
+                            .squares
+                                display: none !important
+
+                            .golden-btn
+                                width: clamp(148.5px,29.00390625vw,594px)
+                                height: clamp(27.5px,5.37109375vw,110px)
+                                background: $gold_gradient
+                                border: none
+                                border-radius: 4px
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: clamp(10px,1.953125vw,40px)
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                margin-top: clamp(16px,3.125vw,64px)
+
+            .service-screen
+                display: none
+
+            .pc-service-screen
+                width: 100%
+                height: auto
+                background-color: $dark_blue
+                display: flex !important
+
+                .content
+                    width: 93.5546875% !important
+                    display: flex !important
+                    flex-direction: column !important
+                    margin-bottom: clamp(32px,6.25vw,128px)
+
+                    .heading-container
+                        width: 100% !important
+                        display: flex !important
+                        align-items: flex-start !important
+
+                        .heading
+                            width: 33%
+                            color: #F9FFFD
+                            font-family: Merriweather
+                            font-size: clamp(22px,4.296875vw,88px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                            .gold
+                                color: $gold
+
+                    .rows
+                        width: 100% !important
+                        display: flex !important
+                        align-items: center !important
+                        justify-content: space-between
+
+                        .row-one-c
+                            width: 40%
+                            height: auto
+                            display: flex
+                            flex-direction: column
+                            border-top: 1px solid $low_opacity
+                            justify-content: flex-start
+
+                            .text
+                                color: $low_opacity
+                                margin-top: clamp(8px,1.5625vw,32px)
+                                font-size: clamp(9px,1.7578125vw,36px)
+                                // margin-left: clamp(4px,0.78125vw,16px)
+
+                        .two
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start !important
+
+                            .text
+                                text-align: right
+
+                    .services-list-content
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: row
+                        margin-top: clamp(32px,6.25vw,128px)
+                        justify-content: space-between !important
+                        align-items: flex-start !important
+
+                        .services-list
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start
+
+                            .btn
+                                text-align: left
+                                text-transform: none !important
+                                box-shadow: none
+                                background-color: none
+                                padding: 0 !important
+                                transform: 0.3s all
+
+                                .text-inactive
+                                    color: rgba(255, 255, 255, 0.30)
+                                    font-family: Merriweather
+                                    font-size: clamp(11px,2.1484375vw,44px)
+                                    font-style: normal
+                                    font-weight: 700
+                                    line-height: 137.4%
+                                    transform: 0.3s all
+
+                                .text-active
+                                    color: $gold
+                                    font-family: Merriweather
+                                    font-size: clamp(13px,2.5390625vw,52px)
+                                    font-style: normal
+                                    font-weight: 700
+                                    line-height: 137.4%
+                                    transform: 0.3s all
+
+                            .one
+                                margin-top: clamp(12px,2.34375vw, 48px)
+
+                        .expanded-tab
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-start !important
+                            margin-right: clamp(4px,0.78125vw,16px)
+
+                            .golden-btn
+                                width: clamp(122px,23.828125vw,488px)
+                                height: clamp(25px,4.8828125vw,100px)
+                                color: $dark_blue
+                                background: $gold_gradient
+                                border: none
+                                border-radius: 3px
+                                font-family: Raleway
+                                font-size: font(9px,1.7578125vw,36px)
+                                font-style: normal
+                                font-weight: 500
+                                line-height: 137.4%
+
+                            .row-text
+                                display: none !important
+
+                            .gold-text
+                                color: $gold
+                                font-family: Raleway
+                                font-size: font(8px,1.7578125vw,36px)
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                text-decoration-line: underline
+                                margin-top: clamp(8px,1.5625vw,32px)
+
+                            .one
+                                margin-top: clamp(16px,3.125vw,64px) !important
+
+                            .two
+                                margin-top: clamp(8px,1.5625vw,32px)
+
+            .doctors-gallery-screen
+                display: none
+
+            .doctors-gallery-screen-pc
+                width: 100%
+                display: flex
+
+                .content
+                    width: 93.5546875% !important
+                    display: flex !important
+                    flex-direction: column !important
+
+                    .heading-container
+                        width: 100% !important
+                        display: flex !important
+                        align-items: flex-start !important
+
+                        .heading
+                            width: 33%
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(22px,4.296875vw,88px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background-color: $dark_blue
+                        margin-top: clamp(32px,6.25vw,128px)
+
+            .free-form-pc
+                display: flex
+                margin-top: clamp(32px,6.25vw,128px)
+
+                .content
+                    width: 93.5546875% !important
+                    display: flex !important
+                    flex-direction: column !important
+
+                    .form-container
+                        width: auto !important
+                        height: auto !important
+                        display: flex !important
+                        flex-direction: column !important
+                        align-items: flex-start !important
+
+                        .free-form-content
+                            display: flex !important
+                            flex-direction: row !important
+                            align-items: flex-end !important
+
+                        .input-content
+                            width: 100% !important
+                            display: flex !important
+                            flex-direction: column !important
+                            align-items: flex-start !important
+
+                            .heading
+                                color: $dark_blue
+                                font-family: Merriweather
+                                font-size: clamp(20px,3.90625vw,80px) !important
+                                font-style: normal
+                                font-weight: 700
+                                line-height: 137.4%
+
+                            .text-container, .two
+                                width: auto
+                                height: auto
+                                display: flex
+                                flex-direction: row !important
+                                align-items: center !important
+                                margin-top: clamp(4px,0.78125vw,16px)
+                                margin-top: clamp(8px,1.5625vw,32px)
+
+                                .paragraph
+                                    width: 50%
+                                    color: $dark_blue
+                                    font-family: Raleway
+                                    font-size: clamp(8.5px,1.66015625vw,34px) !important
+                                    font-style: normal
+                                    font-weight: 500
+                                    line-height: 137.4%
+                                    margin-top: clamp(4px,0.78125vw,16px)
+                                    margin-left: clamp(8px,1.5625vw,32px)
+
+                            .text-span
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: clamp(7.5px,1.46484375vw,30px) !important
+                                font-style: normal
+                                font-weight: 500 !important
+                                line-height: 137.4%
+                                margin-top: clamp(4px,0.78125vw,16px)
+
+                            .input-container
+                                margin-top: clamp(16px,3.125vw,64px) !important
+
+                                .telephone-input
+                                    width: clamp(93px,18.1640625vw,372px) !important
+                                    height: clamp(30px,5.859375vw,120px) !important
+                                    outline: none
+                                    border: none
+                                    font-size: clamp(8px,1.5625vw,32px) !important
+                                    color: rgba(51, 51, 51, 0.66)
+                                    font-family: Raleway
+                                    font-size: clamp(8px,1.5625vw,32px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    padding-left: clamp(8px,1.5625vw,32px)
+                                    line-height: 137.4%
+
+                                .form-btn
+                                    width: clamp(108px,21.09375vw,432px) !important
+                                    height: clamp(30px,5.859375vw,120px) !important
+                                    font-size: clamp(8px,1.5625vw,32px) !important
+                                    border: none
+                                    background: $gold_gradient
+
+                    .form-image
+                        width: clamp(187.5px,36.62109375vw,750px) !important
+                        height: clamp(187.5px,36.62109375vw,750px) !important
+
+            .dental-home-gallery-pc
+                display: flex
+
+                .content
+                    width: 93.5546875% !important
+                    display: flex !important
+                    flex-direction: column !important
+                    margin-top: 0px !important
+
+                    .heading-container
+                        width: 100% !important
+                        display: flex !important
+                        align-items: flex-start !important
+
+                        .heading
+                            width: 33%
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(22px,4.296875vw,88px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+
+                    .galleries-container
+                        width: 95%
+                        height: auto
+                        display: flex !important
+                        justify-content: space-between !important
+                        margin-top: clamp(16px,3.125vw,64px) !important
+
+                        .gallery-one, .gallery-two
+                            width: clamp(283.5px,29.52936vw,1134px)
+                            height: clamp(283.5px,29.52936vw,1134px)
+
+                            .g-heading
+                                width: 100% !important
+                                font-size: clamp(9.5px,1.85546875vw,38px) !important
+
+                            .mySwiper4, .mySwiper5
+                                width: clamp(283.5px,29.52936vw,1134px) !important
+                                height: clamp(283.5px,29.52936vw,1134px) !important
+
+                                .swiper-image
+                                    width: clamp(283.5px,29.52936vw,1134px) !important
+                                    height: clamp(283.5px,29.52936vw,1134px) !important
+
+                    .btn-container
+                        margin-top: clamp(64px,12.5vw,256px) !important
+
+                        .gold-btn
+                            width: clamp(148.5px,29.00390625vw,594px) !important
+                            height: clamp(27.5px,5.37109375vw,110px) !important
+                            border-radius: 5px
+                            background: $gold_gradient
+                            border: none
+                            font-size: clamp(10px,1.953125vw,40px) !important
+
+            .dental-home-gallery
+                display: none !important
+
+            .review-pc-screen
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .content
+                    width: 93.5546875% !important
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .heading-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+
+                        .heading
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(22px,4.296875vw,88px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background-color: $dark_blue
+
+                    .all-reviews-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+                        margin-top: $m32
+
+                        .blue-link
+                            margin-top: clamp(9px,0.93744vw,36px)
+                            color: $dark_blue
+                            font-family: Raleway
+                            font-size: $font18
+                            font-style: normal
+                            font-weight: 600
+                            cursor: pointer
+                            line-height: 137.4%
+                            text-decoration: underline
+                            transition: 0.3s all
+                            &:hover
+                                color: $gold
+
+                    .blue-link
+                        font-size: clamp(9.5px,2.4739583333333335vw,38px) !important
+
+            .review-screen
+                display: none !important
+
+            .form-screen
+                display: flex !important
+
+            .form-pc-screen
+                width: 100%
+                height: auto
+                display: flex !important
+                flex-direction: column
+                align-items: center
+
+                .content
+                    width: 93.5546875% !important
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .heading-container
+                        width: 100%
+                        height: auto
+                        display: flex
+                        align-items: start
+
+                        .heading
+                            width: 30%
+                            color: $dark_blue
+                            font-family: Merriweather
+                            font-size: clamp(22px,4.296875vw,88px)
+                            font-style: normal
+                            font-weight: 700
+                            line-height: 137.4%
+                            text-transform: capitalize
+
+                    .divider
+                        width: 100%
+                        height: 1px
+                        background-color: $dark_blue
+                        margin-top: clamp(16px,3.125vw,64px)
+
+                    .form-content
+                        width: auto
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin-top: $m64
+
+                        .row-c
+                            width: clamp(305px,59.5703125vw,1220px)
+                            height: auto
+                            display: flex
+                            justify-content: space-between
+
+                            .input-container
+                                display: flex
+                                flex-direction: column
+
+                                .text
+                                    color: rgba(32, 38, 55, 0.70)
+                                    font-family: Raleway
+                                    font-size: clamp(8px,1.5625vw,32px) !important
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+
+                                .input-c
+                                    width: clamp(144.5px,29.1015625vw,578px) !important
+                                    height: clamp(25px,4.8828125vw,100px) !important
+                                    border-radius: 4px
+                                    color: rgba(32, 38, 55, 0.60)
+                                    font-family: Raleway
+                                    font-size: clamp(8px,1.5625vw,32px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    border: 2px solid rgba(32, 38, 55, 0.60)
+                                    padding-left: clamp(16px,3.125vw,64px) !important
+                                    margin-top: clamp(4px,0.78125vw,16px) !important
+
+                                .input-s
+                                    width: clamp(305px,59.5703125vw,1220px) !important
+                                    height: clamp(25px,4.8828125vw,100px) !important
+                                    border-radius: 4px
+                                    color: rgba(32, 38, 55, 0.60)
+                                    font-family: Raleway
+                                    font-size: clamp(8px,1.5625vw,32px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    border: 2px solid rgba(32, 38, 55, 0.60)
+                                    padding-left: clamp(16px,3.125vw,64px) !important
+                                    margin-top: clamp(4px,0.78125vw,16px) !important
+
+                            .services
+                                margin-top: clamp(16px,3.125vw,64px) !important
+
+                            .comment
+                                width: clamp(305px,59.5703125vw,1220px)
+                                border-radius: 4px
+                                color: rgba(32, 38, 55, 0.60)
+                                font-family: Raleway
+                                font-size: clamp(8px,1.5625vw,32px)
+                                font-style: normal
+                                font-weight: 400
+                                line-height: 137.4%
+                                border: 2px solid rgba(32, 38, 55, 0.60)
+                                padding-left: clamp(16px,3.125vw,64px)
+                                padding-top: clamp(16px,3.125vw,64px)
+                                margin-top: clamp(4px,0.78125vw,16px)
+
+                        .checkbox-container
+                            width: 85%
+                            height: auto
+                            display: flex
+                            align-items: start
+                            margin-top: clamp(16px,3.125vw,64px)
+
+                            .check-row
+                                width: auto
+                                height: auto
+                                display: flex
+                                align-items: center
+
+                                .checkbox
+                                    width: clamp(16px,3.125vw,64px)
+                                    height: clamp(16px,3.125vw,64px)
+                                    border-radius: 4px
+                                    border: 2px solid #202637
+
+                                .text
+                                    width: 60%
+                                    color: $dark_blue
+                                    font-family: Raleway
+                                    font-size: clamp(7.5px, 1.46484375vw,30px)
+                                    font-style: normal
+                                    font-weight: 400
+                                    line-height: 137.4%
+                                    margin-left: clamp(8px,1.5625vw,32px)
+
+                            .golden-btn
+                                width: clamp(117px,22.8515625vw,468px)
+                                height: clamp(23px,4.4921875vw,92px)
+                                background: $gold_gradient
+                                color: $dark_blue
+                                font-family: Raleway
+                                font-size: clamp(8px,1.5625vw,32px)
+                                border: none
+                                border-radius: 5px
+                                font-style: normal
+                                font-weight: 600
+                                line-height: 137.4%
+                                transition: 0.3s all
+                                &:hover
+                                    color: $white
+
+        .loader
+            width: 100vw
+            height: 100vh
+            background-color: $dark_blue
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .loader-container
+                width: auto
+                height: auto
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: start
+
+                .logo
+                    width: clamp(127px,28.683914510686165vw,510px)
+                    height: clamp(147px, 33.07086614173228vw,588px)
+
+                .loading-heading
+                    width: 70%
+                    color: $white
+                    text-align: center
+                    font-family: Merriweather
+                    font-size: clamp(25px, 5.62429696287964vw,100px) !important
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: $m32 !important

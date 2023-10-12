@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body .screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body .screen .content .main-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen .content .main-content .bread-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .screen .content .main-content .bread-dots .main-link, body .screen .content .main-content .bread-dots .prices-link {
+  color: #202637;
+  font-family: Raleway;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.4%;
+  transition: 0.3s all;
+}
+body .screen .content .main-content .bread-dots .main-link:hover, body .screen .content .main-content .bread-dots .prices-link:hover {
+  color: #E8CB6C;
+}
+body .screen .content .main-content .bread-dots .circle {
+  width: clamp(2.5px, 1.1682vw, 10px);
+  height: clamp(2.5px, 1.1682vw, 10px);
+  background-color: #202637;
+  border-radius: 50px;
+  margin-left: clamp(4px, 1.86912vw, 16px);
+  margin-right: clamp(4px, 1.86912vw, 16px);
+}
+body .screen .content .main-content .bread-dots .prices-link {
+  color: rgba(32, 38, 55, 0.5);
+}
+body .screen .content .main-content .heading {
+  color: #202637;
+  font-family: Merriweather;
+  font-size: clamp(14px, 6.54192vw, 56px) !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.4%;
+  text-transform: capitalize;
+  margin-top: clamp(11.5px, 5.37372vw, 46px);
+}
+body .screen .content .main-content .divider-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body .screen .content .main-content .divider-container .divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(32, 38, 55, 0.5);
+  margin-top: clamp(16px, 7.47648vw, 64px);
+  margin-bottom: clamp(8px, 3.73824vw, 32px);
+}
+body .screen .content .main-content .divider-container .row {
+  width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+body .screen .content .main-content .divider-container .row .text {
+  width: auto;
+  color: rgba(32, 38, 55, 0.5);
+  font-family: Raleway;
+  font-size: clamp(8.5px, 3.97188vw, 34px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.4%;
+}
+body .screen .content .services-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen .content .services-content .heading-container {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen .content .services-content .heading-container .heading {
+  color: #202637;
+  font-family: Merriweather;
+  font-size: clamp(11.5px, 5.37372vw, 46px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.4%;
+}
+body .screen .content .services-content #xray, body .screen .content .services-content #anasthetics, body .screen .content .services-content #restavration {
+  width: 100%;
+  height: auto;
+}
+body .screen .content .services-content .buttons {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .screen .content .services-content .buttons .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .screen .content .services-content .buttons .row .button {
+  width: clamp(90px, 42.0552vw, 360px);
+  height: clamp(30px, 14.0184vw, 120px);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-size: clamp(7.5px, 3.5046vw, 30px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.4%;
+  margin-top: clamp(8px, 3.73824vw, 32px);
+  text-align: center;
+  border-radius: 4px;
+  color: #F4F4F4;
+  background-color: #202637;
+  transition: 0.3s all;
+}
+body .screen .content .services-content .buttons .row .button:hover {
+  background-color: #E8CB6C;
+  color: #202637;
+}
+body .screen .content .services-content .buttons .row .button-active {
+  width: clamp(90px, 42.0552vw, 360px);
+  height: clamp(30px, 14.0184vw, 120px);
+  border: none;
+  font-family: Raleway;
+  font-size: clamp(7.5px, 3.5046vw, 30px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.4%;
+  border-radius: 4px;
+  color: #202637;
+  background-color: #E8CB6C;
+  transition: 0.3s all;
+}
+body .screen .content .services-content .buttons .row .button-active:hover {
+  background-color: #202637;
+  color: #F4F4F4;
+}
+body .screen .content .services-content .buttons .two {
+  margin-top: clamp(8px, 3.73824vw, 32px);
+}
+body .screen .content .services-content .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .screen .content .services-content .cards .price-tab, body .screen .content .services-content .cards .price-tab-long {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #747988;
+  display: flex;
+  flex-direction: column;
+  color: #F4F4F4;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen .content .services-content .cards .price-tab .price-heading, body .screen .content .services-content .cards .price-tab-long .price-heading {
+  width: 100%;
+  font-size: clamp(9.5px, 4.43916vw, 38px);
+  margin-top: clamp(11px, 5.14008vw, 44px);
+  margin-left: clamp(11px, 5.14008vw, 44px);
+}
+body .screen .content .services-content .cards .price-tab .price-p, body .screen .content .services-content .cards .price-tab .price-p-two, body .screen .content .services-content .cards .price-tab .price-p-three, body .screen .content .services-content .cards .price-tab-long .price-p, body .screen .content .services-content .cards .price-tab-long .price-p-two, body .screen .content .services-content .cards .price-tab-long .price-p-three {
+  width: 80%;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: clamp(8px, 3.73824vw, 32px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 147.4%;
+  margin-left: clamp(11px, 5.14008vw, 44px);
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+body .screen .content .services-content .cards .price-tab .price, body .screen .content .services-content .cards .price-tab .price-two, body .screen .content .services-content .cards .price-tab .price-three, body .screen .content .services-content .cards .price-tab-long .price, body .screen .content .services-content .cards .price-tab-long .price-two, body .screen .content .services-content .cards .price-tab-long .price-three {
+  color: #F9FFFD;
+  font-family: Raleway;
+  font-size: clamp(10.5px, 4.90644vw, 42px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.4%;
+  margin-top: clamp(8px, 3.73824vw, 32px);
+  margin-left: clamp(11px, 5.14008vw, 44px);
+}
+body .screen .content .services-content .cards .price-tab .blue-btn, body .screen .content .services-content .cards .price-tab-long .blue-btn {
+  width: 238px;
+  height: 48px;
+  background-color: #202637;
+  color: #E8CB6C;
+  border-radius: 5px;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+  border: none;
+  margin-bottom: clamp(16px, 7.47648vw, 64px);
+  margin-left: clamp(11px, 5.14008vw, 44px);
+  transition: 0.3s all;
+}
+body .screen .content .services-content .cards .price-tab .blue-btn:hover, body .screen .content .services-content .cards .price-tab-long .blue-btn:hover {
+  background-color: #E8CB6C;
+  color: #202637;
+}
+@media screen and (min-width: 1024px) {
+  body .screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen .content {
+    display: none;
+  }
+  body .screen .pc-content-c {
+    width: 100% !important;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+  }
+  body .screen .pc-content-c .main-content {
+    width: 71.8229166667%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  body .screen .pc-content-c .main-content .upper-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container .link-prices {
+    color: rgba(51, 51, 51, 0.5) !important;
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container .link, body .screen .pc-content-c .main-content .upper-content .bread-dots-container .link-prices {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container .bread-dot {
+    width: clamp(2.5px, 0.2604vw, 10px);
+    height: clamp(2.5px, 0.2604vw, 10px);
+    margin-left: clamp(4px, 0.41664vw, 16px);
+    margin-right: clamp(4px, 0.41664vw, 16px);
+    background-color: #202637;
+    border-radius: 50px;
+  }
+  body .screen .pc-content-c .main-content .upper-content .heading-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: clamp(11.5px, 1.19784vw, 46px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .heading-container .heading {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(29px, 3.02064vw, 116px) !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container .divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(32, 38, 55, 0.5);
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container .row-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container .row-container .text {
+    color: #7D8291;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    margin-top: clamp(8px, 0.83328vw, 32px);
+  }
+  body .screen .pc-content-c .main-content .services-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list {
+    height: auto !important;
+    position: sticky !important;
+    top: clamp(64px, 6.66624vw, 256px) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button, body .screen .pc-content-c .main-content .services-content .services-list .button-active {
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    margin-top: clamp(8px, 0.83328vw, 32px) !important;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button-active {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(10.5px, 1.09368vw, 42px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 137.4%;
+    text-decoration-line: underline;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button {
+    color: #7D8291;
+    font-family: Raleway;
+    font-size: clamp(10px, 1.0416vw, 40px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    transition: 0.3s all;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button:hover {
+    font-size: clamp(10.5px, 1.09368vw, 42px);
+    font-weight: 800;
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list {
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .heading {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(13px, 1.35408vw, 52px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long {
+    width: clamp(443.5px, 46.19496vw, 1774px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    background: #747988;
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-heading, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-heading {
+    color: #F4F4F4;
+    font-family: Merriweather;
+    font-size: clamp(12px, 1.24992vw, 48px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    margin-left: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-p, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-p-two, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-p-three, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-p, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-p-two, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-p-three {
+    width: 65%;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    margin-left: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-p-two, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-p-two {
+    width: 65%;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    margin-left: clamp(16px, 1.66656vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-two, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .price-three, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-two, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .price-three {
+    color: #F4F4F4;
+    font-family: Raleway;
+    font-size: clamp(10.5px, 1.09368vw, 42px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    margin-left: clamp(16px, 1.66656vw, 64px);
+    margin-top: clamp(8px, 0.83328vw, 32px);
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .blue-btn, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .blue-btn {
+    width: clamp(119px, 12.39504vw, 476px);
+    height: clamp(24px, 2.49984vw, 96px);
+    background-color: #202637;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: clamp(10px, 1.0416vw, 40px);
+    color: #E8CB6C;
+    margin-left: clamp(16px, 1.66656vw, 64px);
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    margin-bottom: clamp(16px, 1.66656vw, 64px);
+    transition: 0.3s all;
+  }
+  body .screen .pc-content-c .main-content .services-content .cards-list .price-tab .blue-btn:hover, body .screen .pc-content-c .main-content .services-content .cards-list .price-tab-long .blue-btn:hover {
+    background-color: #E8CB6C;
+    color: #202637;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body .screen .content {
+    display: none;
+  }
+  body .screen .pc-content-c {
+    width: 100%;
+    display: flex !important;
+    height: auto;
+    margin: auto;
+    margin-bottom: clamp(45px, 11.71875vw, 180px);
+  }
+  body .screen .pc-content-c .main-content {
+    width: 93.5546875%;
+    height: auto;
+    margin: auto !important;
+  }
+  body .screen .pc-content-c .main-content .upper-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(16px, 4.1666666667vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container .bread-dot {
+    width: clamp(4px, 0.78125vw, 16px);
+    height: clamp(4px, 0.78125vw, 16px);
+    border-radius: 50px;
+    background-color: #202637;
+    margin-left: clamp(4px, 1.0416666667vw, 16px);
+    margin-right: clamp(4px, 1.0416666667vw, 16px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container .link, body .screen .pc-content-c .main-content .upper-content .bread-dots-container .link-prices {
+    color: #202637 !important;
+    font-family: Raleway;
+    font-size: clamp(9px, 2.34375vw, 36px) !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .main-content .upper-content .bread-dots-container .link-prices {
+    color: rgba(32, 38, 55, 0.5) !important;
+  }
+  body .screen .pc-content-c .main-content .upper-content .heading-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  body .screen .pc-content-c .main-content .upper-content .heading-container .heading {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(22px, 5.7291666667vw, 88px) !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+    text-transform: capitalize;
+    margin-top: clamp(8px, 2.0833333333vw, 32px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container .divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(32, 38, 55, 0.5);
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container .row-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: clamp(8px, 2.0833333333vw, 32px);
+  }
+  body .screen .pc-content-c .main-content .upper-content .divider-container .row-container .text {
+    color: rgba(32, 38, 55, 0.5);
+    font-family: Raleway;
+    font-size: clamp(9px, 2.34375vw, 36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .main-content .services-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(32px, 8.3333333333vw, 128px);
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button, body .screen .pc-content-c .main-content .services-content .services-list .button-active {
+    display: flex !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none;
+    background: none;
+    margin-top: 16px !important;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button {
+    color: rgba(32, 38, 55, 0.5);
+    font-family: Raleway;
+    font-size: clamp(9px, 2.34375vw, 36px) !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .main-content .services-content .services-list .button-active {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(9px, 2.34375vw, 36px) !important;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 137.4%;
+    text-decoration-line: underline;
+  }
+  body .screen .pc-content-c .main-content .cards-list {
+    display: flex;
+    flex-direction: column;
+  }
+  body .screen .pc-content-c .main-content .cards-list .heading {
+    color: #202637;
+    font-family: Merriweather;
+    font-size: clamp(13px, 3.3854166667vw, 52px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+  }
+  body .screen .pc-content-c .main-content .cards-list .price-tab, body .screen .pc-content-c .main-content .cards-list .price-tab-long {
+    width: clamp(214.5px, 55.859375vw, 858px);
+    height: auto;
+    border-radius: 8px;
+    background: #747988;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(16px, 4.1666666667vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .cards-list .price-tab .price-heading, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-heading {
+    color: #F4F4F4;
+    font-family: Merriweather;
+    font-size: clamp(10px, 2.6041666667vw, 40px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 137.4%;
+    margin-top: clamp(16px, 4.1666666667vw, 64px);
+    margin-left: clamp(16px, 4.1666666667vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .cards-list .price-tab .price-p, body .screen .pc-content-c .main-content .cards-list .price-tab .price-p-two, body .screen .pc-content-c .main-content .cards-list .price-tab .price-p-three, body .screen .pc-content-c .main-content .cards-list .price-tab .price-p-four, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-p, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-p-two, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-p-three, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-p-four {
+    width: 80%;
+    color: #F4F4F4;
+    font-family: Raleway;
+    font-size: clamp(8px, 2.0833333333vw, 32px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    margin-top: clamp(16px, 4.1666666667vw, 64px);
+    margin-left: clamp(16px, 4.1666666667vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .cards-list .price-tab .price, body .screen .pc-content-c .main-content .cards-list .price-tab .price-two, body .screen .pc-content-c .main-content .cards-list .price-tab .price-three, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-two, body .screen .pc-content-c .main-content .cards-list .price-tab-long .price-three {
+    color: #F4F4F4;
+    font-family: Raleway;
+    font-size: clamp(8px, 2.0833333333vw, 32px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.4%;
+    margin-top: clamp(8px, 2.0833333333vw, 32px) !important;
+    margin-left: clamp(16px, 4.1666666667vw, 64px);
+  }
+  body .screen .pc-content-c .main-content .cards-list .price-tab .blue-btn, body .screen .pc-content-c .main-content .cards-list .price-tab-long .blue-btn {
+    width: clamp(119px, 30.9895833333vw, 476px);
+    height: clamp(24px, 6.25vw, 96px);
+    color: #F4F4F4;
+    background-color: #202637;
+    border: none;
+    border-radius: 5px;
+    margin-top: clamp(8px, 2.0833333333vw, 32px) !important;
+    margin-left: clamp(16px, 4.1666666667vw, 64px);
+    margin-bottom: clamp(8px, 2.0833333333vw, 32px) !important;
+  }
+}/*# sourceMappingURL=prices_styles.css.map */

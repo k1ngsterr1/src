@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (min-width: 1200px) {
+  body .mySwiper3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .pc-gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .pc-gallery .gallery-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .pc-gallery .gallery-nav .previous, body .pc-gallery .gallery-nav .next {
+    width: clamp(19px, 1.97904vw, 76px);
+    height: clamp(19px, 1.97904vw, 76px);
+    border-radius: 70px;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    border: 1px solid #202637;
+    color: #202637;
+    transition: 0.3s all;
+  }
+  body .pc-gallery .gallery-nav .previous:hover, body .pc-gallery .gallery-nav .next:hover {
+    color: #E8CB6C;
+  }
+  body .pc-gallery .gallery-nav .previous {
+    margin-right: clamp(8px, 0.83328vw, 32px);
+  }
+  body .pc-gallery .dentist-card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+  body .pc-gallery .dentist-card .dentist-card, body .pc-gallery .dentist-card .dentist-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+  }
+  body .pc-gallery .dentist-card .button-image-container {
+    position: relative;
+  }
+  body .pc-gallery .dentist-card .button-image-container .doctor-btn {
+    position: absolute;
+    width: clamp(51.5px, 5.36424vw, 206px);
+    height: clamp(47px, 4.89552vw, 188px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #202637;
+    border: none;
+    color: #F4F4F4;
+    font-family: Raleway;
+    font-size: clamp(8px, 0.83328vw, 32px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.4%;
+    top: clamp(202.5px, 21.0924vw, 810px);
+    left: clamp(130px, 13.5408vw, 520px);
+    text-transform: capitalize;
+    transition: 0.3s all;
+  }
+  body .pc-gallery .dentist-card .button-image-container .doctor-btn:hover {
+    background-color: #E8CB6C;
+    color: #202637;
+  }
+  body .pc-gallery .dentist-card .button-image-container .doctor-image {
+    width: clamp(194px, 20.20704vw, 776px) !important;
+    height: clamp(261.5px, 27.23784vw, 1046px) !important;
+  }
+  body .pc-gallery .dentist-card .doctor-name {
+    color: #202637;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: clamp(14.5px, 1.51032vw, 58px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    margin-top: clamp(8px, 0.83328vw, 32px);
+    text-transform: capitalize;
+  }
+  body .pc-gallery .dentist-card .doctor-position {
+    width: 60%;
+    text-align: center;
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(9px, 0.93744vw, 36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .pc-gallery .swiper-custom {
+    width: 100%;
+    margin-top: clamp(32px, 14.95296vw, 128px);
+  }
+  body .pc-gallery .custom-swiper-slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  body .pc-gallery .blue-link {
+    color: #202637;
+    font-family: Raleway;
+    font-size: clamp(8px, 0.83328vw, 32px);
+    font-style: normal;
+    font-weight: 400;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    line-height: 137.4%;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body .mySwiper3 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .pc-gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .pc-gallery .dentist-card, body .pc-gallery .dentist-card-2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: clamp(16px, 3.125vw, 64px);
+  }
+  body .pc-gallery .dentist-card .button-image-container, body .pc-gallery .dentist-card-2 .button-image-container {
+    position: relative;
+  }
+  body .pc-gallery .dentist-card .button-image-container .doctor-btn, body .pc-gallery .dentist-card-2 .button-image-container .doctor-btn {
+    position: absolute;
+    width: clamp(51.5px, 10.05859375vw, 206px);
+    height: clamp(47px, 9.1796875vw, 188px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #202637;
+    border: none;
+    color: #F4F4F4;
+    font-family: Raleway;
+    font-size: clamp(8px, 1.5625vw, 32px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.4%;
+    top: clamp(105px, 20.5078125vw, 420px);
+    left: clamp(60px, 11.71875vw, 240px);
+    text-transform: capitalize;
+    transition: 0.3s all;
+  }
+  body .pc-gallery .dentist-card .button-image-container .doctor-btn:hover, body .pc-gallery .dentist-card-2 .button-image-container .doctor-btn:hover {
+    background-color: #E8CB6C;
+    color: #202637;
+  }
+  body .pc-gallery .dentist-card .doctor-image, body .pc-gallery .dentist-card-2 .doctor-image {
+    width: clamp(120px, 23.4375vw, 480px) !important;
+    height: clamp(161.5px, 31.54296875vw, 646px) !important;
+  }
+  body .pc-gallery .dentist-card .doctor-name, body .pc-gallery .dentist-card-2 .doctor-name {
+    color: #202637;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: clamp(10px, 1.953125vw, 40px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+    margin-top: clamp(8px, 1.5625vw, 32px);
+  }
+  body .pc-gallery .dentist-card .doctor-position, body .pc-gallery .dentist-card-2 .doctor-position {
+    width: 80%;
+    color: #202637;
+    text-align: center;
+    font-family: Raleway;
+    font-size: clamp(8px, 1.5625vw, 32px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.4%;
+    text-transform: capitalize;
+  }
+  body .pc-gallery .gallery-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .pc-gallery .gallery-nav .previous, body .pc-gallery .gallery-nav .next {
+    width: clamp(16px, 3.125vw, 64px);
+    height: clamp(16px, 3.125vw, 64px);
+    border-radius: 70px;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #202637;
+    color: #202637;
+    transition: 0.3s all;
+  }
+  body .pc-gallery .gallery-nav .previous:hover, body .pc-gallery .gallery-nav .next:hover {
+    color: #E8CB6C;
+  }
+  body .pc-gallery .gallery-nav .previous .icon, body .pc-gallery .gallery-nav .next .icon {
+    font-size: clamp(8px, 1.5625vw, 32px) !important;
+  }
+  body .pc-gallery .gallery-nav .previous {
+    margin-right: clamp(8px, 0.83328vw, 32px);
+  }
+}/*# sourceMappingURL=pc_gallery_styles.css.map */

@@ -1,0 +1,249 @@
+@import "../../../styles/variables"
+
+body
+
+    .screen
+
+        .mob-content
+            width: 90%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin: auto
+
+            .heading-container
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                margin-top: $m64mob
+
+                .bread-dots-container
+                    display: flex
+                    align-items: center
+
+                    .link
+                        color: $dark_blue
+                        font-family: Raleway
+                        font-size: clamp(7.5px,3.5046vw,30px)
+                        font-style: normal
+                        font-weight: 500
+                        line-height: 137.4%
+
+                    .dot
+                        width: clamp(3px,1.40184vw,12px)
+                        height: clamp(3px,1.40184vw,12px)
+                        margin-left: $m8mob
+                        margin-right: $m8mob
+                        border-radius: 50px
+                        background-color: $dark_blue
+
+                .heading
+                    color: $dark_blue
+                    font-family: Merriweather
+                    font-size: clamp(14px,6.541919999999999vw,56px) !important
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: $m16mob
+
+            .divider-container
+                display: flex
+                flex-direction: column
+
+                .divider
+                    width: 100%
+                    height: 1px
+                    background-color: rgba(32, 38, 55, 0.50)
+                    margin-top: $m32mob
+
+                .text
+                    margin-top: $m8mob
+                    color: rgba(32, 38, 55, 0.50)
+
+            .text-content
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+
+                .text-heading
+                    margin-top: $m32mob
+                    font-size: clamp(11.5px,5.37372vw,46px)
+                    line-height: 137.4%
+
+                .text-container
+                    display: flex
+                    flex-direction: column
+                    margin-top: $m32mob
+
+                    .paragraph
+                        font-size: clamp(8px,3.73824vw,32px)
+                        margin-top: $m8mob
+
+                    .additional-heading
+                        line-height: 137.4%
+
+                    .two
+                        margin-top: $m32mob
+
+                    .table
+                        border-collapse: collapse
+                        width: 100%
+                        border: 1px solid $low_opacity_blue
+                        margin-top: $m32mob
+
+                        .cell
+                            font-size: clamp(8px,3.73824vw,32px)
+                            color: $dark_blue
+                            border: 1px solid $low_opacity_blue,
+                            textAlign: left,
+                            borderRight: 1px solid $low_opacity_blue, // A
+
+        .pc-content-cont
+            display: none
+
+    @media screen and  (min-width: 1024px)
+
+        .mob-content
+            display: none !important
+
+        .pc-content-cont
+            width: 71.82291666666667% !important
+            height: auto !important
+            display: flex !important
+            flex-direction: column
+            margin: auto
+            margin-bottom: $m128
+
+            .heading-container
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column
+                margin-top: $m64
+
+                .bread-dots-container
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+
+                    .link
+                        color: $dark_blue
+                        font-family: Raleway
+                        font-size: clamp(9px,0.93744vw,36px)
+                        font-style: normal
+                        font-weight: 500
+                        line-height: 137.4%
+
+                    .dot
+                        width: clamp(3px,0.31248vw,12px)
+                        height: clamp(3px,0.31248vw,12px)
+                        margin-left: $m8
+                        margin-right: $m8
+                        background-color: $dark_blue
+                        border-radius: 50px
+
+                .heading
+                    width: 60%
+                    color: $dark_blue
+                    font-family: Merriweather
+                    font-size: clamp(29px,3.02064vw,116px) !important
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 137.4%
+                    text-transform: capitalize
+                    margin-top: $m16
+
+            .divider-container
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+                margin-top: $m64
+
+                .divider-one, .divider-two
+                    width: 35%
+                    display: flex
+                    flex-direction: column
+
+                    .divider
+                        background-color: $low_opacity_blue
+                        height: 1px
+
+                    .text
+                        margin-top: $m8
+                        color: $low_opacity_blue
+
+                .divider-two
+                    width: 60%
+
+            .text-container
+                height: auto
+                margin-top: $m32
+                display: flex
+                justify-content: space-between
+
+            .anchor-list
+                width: 65%
+                height: clamp(365px,38.0184vw,1460px)
+                display: flex
+                flex-direction: column
+                position: sticky !important
+                top: $m128 !important
+                align-items: flex-start
+
+                .link
+                    width: 50%
+                    color: $dark_blue
+                    font-family: Raleway
+                    font-size: clamp(8px,0.83328vw,32px)
+                    font-style: normal
+                    font-weight: 600
+                    line-height: 137.4%
+                    text-decoration-line: underline
+                    transition: 0.3s all
+                    &:hover
+                        color: $gold
+
+                .two
+                    margin-top: $m16
+
+            .information
+                width: 100%
+                display: flex
+                flex-direction: column
+
+                .text-container
+                    display: flex
+                    flex-direction: column
+
+                    h4
+                        color: #202637
+                        font-family: Merriweather
+                        font-size: clamp(13px,1.35408vw,52px)
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 137.4%
+                        margin-bottom: $m32
+
+                    p
+                        margin-top: clamp(8px,0.83328vw,32px)
+
+                    .table
+                        width: 100% !important
+                        borderCollapse: collapse !important
+                        border: 1px solid $low_opacity_blue !important
+                        color: rgba(32, 38, 55, 0.80)
+                        font-family: Raleway
+                        font-size: $m16
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 137.4%
+
+                        .cell
+                            text-align: left
+                            padding-top: $m16
+                            padding-left: $m8
+                            border-right: 1px solid $low_opacity_blue !important
+                            padding-bottom: $m16

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body .screen .works-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(32px, 3.33312vw, 128px);
+}
+body .screen .works-container .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .screen .works-container .row .photos {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .screen .works-container .row .photos .img {
+  width: clamp(194px, 20.20704vw, 776px);
+  height: clamp(261.5px, 27.23784vw, 1046px);
+}
+body .screen .works-container .row .two {
+  margin-top: clamp(16px, 1.66656vw, 64px);
+}/*# sourceMappingURL=works_styles.css.map */
