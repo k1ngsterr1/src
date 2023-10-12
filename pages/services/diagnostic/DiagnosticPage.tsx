@@ -654,27 +654,31 @@ const DiagnosticPage = () => {
                   <span className="text">Содержание</span>
                   <div className="buttons">
                     <ScrollLink
-                      to=""
+                      to="information"
                       value={"Основная информация"}
                       className="button"
                     >
                       Основная информация
                     </ScrollLink>
-                    <ScrollLink to="" value={"Цены"} className="button">
-                      Цены
-                    </ScrollLink>
-                    <ScrollLink to="" value={"Работы"} className="button">
-                      Работы
-                    </ScrollLink>
-                    <ScrollLink to="" value={"Врачи"} className="button">
+                    <ScrollLink to="doctors" value={"Врачи"} className="button">
                       Врачи
                     </ScrollLink>
+                    <ScrollLink to="prices" value={"Цены"} className="button">
+                      Цены
+                    </ScrollLink>
+                    <ScrollLink to="works" value={"Работы"} className="button">
+                      Работы
+                    </ScrollLink>
 
-                    <ScrollLink to="" value={"Отзывы"} className="button">
+                    <ScrollLink
+                      to="reviews"
+                      value={"Отзывы"}
+                      className="button"
+                    >
                       Отзывы
                     </ScrollLink>
                     <ScrollLink
-                      to=""
+                      to="form-screen"
                       value={"Записаться на прием"}
                       className="button"
                     >
@@ -682,7 +686,7 @@ const DiagnosticPage = () => {
                     </ScrollLink>
                   </div>
                 </div>
-                <div className="services-information">
+                <div className="services-information" id="information">
                   <span className="text">Об услуге</span>
                   <div className="information-one">
                     <h3 className="heading-info">
@@ -750,7 +754,7 @@ const DiagnosticPage = () => {
                     </p>
                   </div>
                   <div className="divider"></div>
-                  <div className="price-tab">
+                  <div className="price-tab" id="prices">
                     <h4 className="price-heading">Консультации</h4>
                     <div className="prices">
                       <div className="price-row">
@@ -895,6 +899,7 @@ const DiagnosticPage = () => {
                 </div>
               </div>
               <div
+                id="services"
                 className="gallery"
                 style={{
                   borderTop: "1px solid #202637",
@@ -909,6 +914,7 @@ const DiagnosticPage = () => {
                 ></PcServiceGallery>
               </div>
               <div
+                id="doctors"
                 className="gallery"
                 style={{
                   borderTop: "1px solid #202637",
