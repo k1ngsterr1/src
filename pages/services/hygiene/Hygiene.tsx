@@ -75,6 +75,9 @@ const hygienePc = require("../../../assets/hygiene_pc.webp");
 
 const logoMobile: string = require("../../../assets/logo_mob.svg").default;
 
+const doctorTen = require("../../../assets/yana_pc.webp");
+const doctorTenMob = require("../../../assets/yana_mob.webp");
+
 const Hygiene = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuPcOpen, setIsMenuPcOpen] = useState(false);
@@ -427,7 +430,7 @@ const Hygiene = () => {
                   imageSrcFour={doctorFourMob}
                   imageSrcFive={doctorFiveMob}
                   imageSrcSix={doctorSixMob}
-                  imageSrcSeven={doctorSevenMob}
+                  imageSrcSeven={doctorTenMob}
                   imageSrcEight={doctorEightMob}
                   openModal={openModal}
                   imageSrcNine={doctorNineMob}
@@ -811,7 +814,7 @@ const Hygiene = () => {
                   imageSrc4={doctorFour}
                   imageSrc5={doctorFive}
                   imageSrc6={doctorSix}
-                  imageSrc7={doctorSeven}
+                  imageSrc7={doctorTen}
                   imageSrc8={doctorEight}
                   imageSrc9={doctorNine}
                 />

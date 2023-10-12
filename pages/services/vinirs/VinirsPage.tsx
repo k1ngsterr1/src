@@ -71,6 +71,9 @@ const serviceTwoMob = require("../../../assets/service_mob_02.webp");
 const serviceThreeMob = require("../../../assets/service_mob_03.webp");
 const serviceFourMob = require("../../../assets/service_mob_04.webp");
 
+const doctorTen = require("../../../assets/yana_pc.webp");
+const doctorTenMob = require("../../../assets/yana_mob.webp");
+
 const VinirsPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuPcOpen, setIsMenuPcOpen] = useState(false);
@@ -628,7 +631,7 @@ const VinirsPage = () => {
                   imageSrcFour={doctorFourMob}
                   imageSrcFive={doctorFiveMob}
                   imageSrcSix={doctorSixMob}
-                  imageSrcSeven={doctorSevenMob}
+                  imageSrcSeven={doctorTenMob}
                   imageSrcEight={doctorEightMob}
                   imageSrcNine={doctorNineMob}
                   openModal={openModal}
@@ -1292,7 +1295,7 @@ const VinirsPage = () => {
                   imageSrc4={doctorFour}
                   imageSrc5={doctorFive}
                   imageSrc6={doctorSix}
-                  imageSrc7={doctorSeven}
+                  imageSrc7={doctorTen}
                   imageSrc8={doctorEight}
                   imageSrc9={doctorNine}
                   openModal={openModal}

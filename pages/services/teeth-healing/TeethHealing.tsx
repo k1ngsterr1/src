@@ -75,6 +75,9 @@ const serviceTwoMob = require("../../../assets/service_mob_02.webp");
 const serviceThreeMob = require("../../../assets/service_mob_03.webp");
 const serviceFourMob = require("../../../assets/service_mob_04.webp");
 
+const doctorTen = require("../../../assets/yana_pc.webp");
+const doctorTenMob = require("../../../assets/yana_mob.webp");
+
 const TeethHealing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuPcOpen, setIsMenuPcOpen] = useState(false);
@@ -661,7 +664,7 @@ const TeethHealing = () => {
                   imageSrcFive={doctorFiveMob}
                   imageSrcSix={doctorSixMob}
                   openModal={openModal}
-                  imageSrcSeven={doctorSevenMob}
+                  imageSrcSeven={doctorTenMob}
                   imageSrcEight={doctorEightMob}
                   imageSrcNine={doctorNineMob}
                 />
@@ -1237,7 +1240,7 @@ const TeethHealing = () => {
                   imageSrc5={doctorFive}
                   openModal={openModal}
                   imageSrc6={doctorSix}
-                  imageSrc7={doctorSeven}
+                  imageSrc7={doctorTen}
                   imageSrc8={doctorEight}
                   imageSrc9={doctorNine}
                 />

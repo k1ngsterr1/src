@@ -40,6 +40,7 @@ const doctorSix = require("../../../assets/6.webp");
 const doctorSeven = require("../../../assets/7.webp");
 const doctorEight = require("../../../assets/8.webp");
 const doctorNine = require("../../../assets/9.webp");
+const doctorTen = require("../../../assets/yana_pc.webp");
 
 const modalImage = require("../../../assets/example_modal.webp");
 const logoMobile = require("../../../assets/logo_mob.svg").default;
@@ -53,6 +54,7 @@ const doctorSixMob = require("../../../assets/06.webp");
 const doctorSevenMob = require("../../../assets/07.webp");
 const doctorEightMob = require("../../../assets/08.webp");
 const doctorNineMob = require("../../../assets/09.webp");
+const doctorTenMob = require("../../../assets/yana_mob.webp");
 
 const serviceOnePc = require("../../../assets/service_1.webp");
 const serviceTwoPc = require("../../../assets/service_2.webp");
@@ -365,7 +367,7 @@ const Whitening = () => {
                   imageSrcFive={doctorFiveMob}
                   imageSrcSix={doctorSixMob}
                   openModal={openModal}
-                  imageSrcSeven={doctorSevenMob}
+                  imageSrcSeven={doctorTenMob}
                   imageSrcEight={doctorEightMob}
                   imageSrcNine={doctorNineMob}
                 />
@@ -680,7 +682,7 @@ const Whitening = () => {
                   imageSrc4={doctorFour}
                   imageSrc5={doctorFive}
                   imageSrc6={doctorSix}
-                  imageSrc7={doctorSeven}
+                  imageSrc7={doctorTen}
                   imageSrc8={doctorEight}
                   openModal={openModal}
                   imageSrc9={doctorNine}

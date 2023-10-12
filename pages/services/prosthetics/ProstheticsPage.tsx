@@ -76,6 +76,9 @@ const serviceFourMob = require("../../../assets/service_mob_04.webp");
 
 const prostheticsPc = require("../../../assets/prosthetics_pc.webp");
 
+const doctorTen = require("../../../assets/yana_pc.webp");
+const doctorTenMob = require("../../../assets/yana_mob.webp");
+
 const ProstheticsPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuPcOpen, setIsMenuPcOpen] = useState(false);
@@ -747,7 +750,7 @@ const ProstheticsPage = () => {
                   imageSrcFour={doctorFourMob}
                   imageSrcFive={doctorFiveMob}
                   imageSrcSix={doctorSixMob}
-                  imageSrcSeven={doctorSevenMob}
+                  imageSrcSeven={doctorTenMob}
                   imageSrcEight={doctorEightMob}
                   imageSrcNine={doctorNineMob}
                   openModal={openModal}
@@ -1427,7 +1430,7 @@ const ProstheticsPage = () => {
                   imageSrc4={doctorFour}
                   imageSrc5={doctorFive}
                   imageSrc6={doctorSix}
-                  imageSrc7={doctorSeven}
+                  imageSrc7={doctorTen}
                   imageSrc8={doctorEight}
                   imageSrc9={doctorNine}
                   openModal={openModal}

@@ -73,6 +73,9 @@ const serviceFourMob = require("../../../assets/service_mob_04.webp");
 const modalImage = require("../../../assets/example_modal.webp");
 const logoMobile = require("../../../assets/logo_mob.svg").default;
 
+const doctorTen = require("../../../assets/yana_pc.webp");
+const doctorTenMob = require("../../../assets/yana_mob.webp");
+
 const BiteCorrection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMenuPcOpen, setIsMenuPcOpen] = useState(false);
@@ -531,7 +534,7 @@ const BiteCorrection = () => {
                   imageSrcFive={doctorFiveMob}
                   openModal={openModal}
                   imageSrcSix={doctorSixMob}
-                  imageSrcSeven={doctorSevenMob}
+                  imageSrcSeven={doctorTenMob}
                   imageSrcEight={doctorEightMob}
                   imageSrcNine={doctorNineMob}
                 />
@@ -1050,7 +1053,7 @@ const BiteCorrection = () => {
                   openModal={openModal}
                   imageSrc5={doctorFive}
                   imageSrc6={doctorSix}
-                  imageSrc7={doctorSeven}
+                  imageSrc7={doctorTen}
                   imageSrc8={doctorEight}
                   imageSrc9={doctorNine}
                 />

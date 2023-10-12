@@ -78,6 +78,20 @@ const PcGallery: React.FC<PhotoSource> = ({
               <button className="doctor-btn" onClick={openModal}>
                 <span className="text">Записаться</span>
               </button>
+              <img src={imageSrc7} alt="Doctor 1" className="doctor-image" />
+            </div>
+            <h3 className="doctor-name">Дербенцева Яна Сергеевна</h3>
+            <p className="doctor-position">
+              Врач стоматолог хирург-имплантолог-парадонтолог
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="dentist-card">
+            <div className="button-image-container">
+              <button className="doctor-btn" onClick={openModal}>
+                <span className="text">Записаться</span>
+              </button>
               <img src={imageSrc} alt="Doctor 1" className="doctor-image" />
             </div>
             <h3 className="doctor-name">Аманова Альфия Камиловна</h3>
@@ -113,19 +127,19 @@ const PcGallery: React.FC<PhotoSource> = ({
         <SwiperSlide>
           <div className="dentist-card">
             <div className="button-image-container">
-              <button className="doctor-btn">
+              <button className="doctor-btn" onClick={openModal}>
                 <span className="text">Записаться</span>
               </button>
               <img src={imageSrc4} alt="Doctor 1" className="doctor-image" />
             </div>
-            <h3 className="doctor-name">Пятаев Ислам Рушанович</h3>
+            <h3 className="doctor-name">Пятаев Ислям Рушанович</h3>
             <p className="doctor-position">Стоматолог терапевт-микроскопист </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="dentist-card">
             <div className="button-image-container">
-              <button className="doctor-btn">
+              <button className="doctor-btn" onClick={openModal}>
                 <span className="text">Записаться</span>
               </button>
               <img src={imageSrc5} alt="Doctor 1" className="doctor-image" />
@@ -136,27 +150,13 @@ const PcGallery: React.FC<PhotoSource> = ({
         </SwiperSlide>
         <SwiperSlide>
           <div className="dentist-card">
-            <div className="button-image-container">
+            <div className="button-image-container" onClick={openModal}>
               <button className="doctor-btn">
                 <span className="text">Записаться</span>
               </button>
               <img src={imageSrc6} alt="Doctor 1" className="doctor-image" />
             </div>
             <h3 className="doctor-name">Бурмистрова Анастасия Игоревна. </h3>
-            <p className="doctor-position">
-              Главный врач, врач-ортопед, врач-хирург,имплантолог{" "}
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="dentist-card">
-            <div className="button-image-container">
-              <button className="doctor-btn">
-                <span className="text">Записаться</span>
-              </button>
-              <img src={imageSrc7} alt="Doctor 1" className="doctor-image" />
-            </div>
-            <h3 className="doctor-name">Дербенцева Яна Сергеевна</h3>
             <p className="doctor-position">
               Врач стоматолог терапевт-микроскопист
             </p>
@@ -165,7 +165,7 @@ const PcGallery: React.FC<PhotoSource> = ({
         <SwiperSlide>
           <div className="dentist-card">
             <div className="button-image-container">
-              <button className="doctor-btn">
+              <button className="doctor-btn" onClick={openModal}>
                 <span className="text">Записаться</span>
               </button>
               <img src={imageSrc8} alt="Doctor 1" className="doctor-image" />
