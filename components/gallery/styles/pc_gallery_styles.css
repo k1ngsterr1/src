@@ -126,7 +126,7 @@
     text-transform: capitalize;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   body .mySwiper3 {
     width: 100%;
     flex-direction: row;
